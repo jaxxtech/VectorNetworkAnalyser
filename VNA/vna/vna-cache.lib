@@ -201,41 +201,6 @@ X RF1 8 500 200 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dk_RF-Detectors_AD8302ARUZ
-#
-DEF dk_RF-Detectors_AD8302ARUZ U 0 40 Y Y 1 F N
-F0 "U" -350 450 60 H V C CNN
-F1 "dk_RF-Detectors_AD8302ARUZ" -100 550 60 H V R CNN
-F2 "digikey-footprints:TSSOP-14_W4.4mm" 200 200 60 H I L CNN
-F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8302.pdf" 200 300 60 H I L CNN
-F4 "AD8302ARUZ-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "AD8302ARUZ" 200 500 60 H I L CNN "MPN"
-F6 "RF/IF and RFID" 200 600 60 H I L CNN "Category"
-F7 "RF Detectors" 200 700 60 H I L CNN "Family"
-F8 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8302.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/analog-devices-inc/AD8302ARUZ/AD8302ARUZ-ND/671074" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC RF DETECT 2.7GHZ 14TSSOP" 200 1000 60 H I L CNN "Description"
-F11 "Analog Devices Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -400 400 400 -400 0 1 0 f
-X COMM 1 0 -500 100 U 50 50 1 1 W
-X PSET 10 500 -100 100 L 50 50 1 1 I
-X VREF 11 500 0 100 L 50 50 1 1 O
-X MSET 12 500 100 100 L 50 50 1 1 I
-X VMAG 13 500 200 100 L 50 50 1 1 O
-X MFLT 14 500 300 100 L 50 50 1 1 P
-X INPA 2 -500 300 100 R 50 50 1 1 I
-X OFSA 3 -500 200 100 R 50 50 1 1 P
-X VPOS 4 0 500 100 D 50 50 1 1 W
-X OFSB 5 -500 0 100 R 50 50 1 1 P
-X INPB 6 -500 100 100 R 50 50 1 1 I
-X COMM 7 100 -500 100 U 50 50 1 1 W
-X PFLT 8 500 -300 100 L 50 50 1 1 P
-X VPHS 9 500 -200 100 L 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
@@ -287,6 +252,41 @@ DRAW
 C 0 75 25 0 1 0 N
 P 2 0 1 0 0 0 0 50 N
 X VDD 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# vna-rescue_AD8302ARUZ-dk_RF-Detectors
+#
+DEF vna-rescue_AD8302ARUZ-dk_RF-Detectors U 0 40 Y Y 1 F N
+F0 "U" -350 450 60 H V C CNN
+F1 "vna-rescue_AD8302ARUZ-dk_RF-Detectors" -100 550 60 H V R CNN
+F2 "digikey-footprints:TSSOP-14_W4.4mm" 200 200 60 H I L CNN
+F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8302.pdf" 200 300 60 H I L CNN
+F4 "AD8302ARUZ-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "AD8302ARUZ" 200 500 60 H I L CNN "MPN"
+F6 "RF/IF and RFID" 200 600 60 H I L CNN "Category"
+F7 "RF Detectors" 200 700 60 H I L CNN "Family"
+F8 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8302.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/analog-devices-inc/AD8302ARUZ/AD8302ARUZ-ND/671074" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC RF DETECT 2.7GHZ 14TSSOP" 200 1000 60 H I L CNN "Description"
+F11 "Analog Devices Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -400 400 400 -400 0 1 0 f
+X COMM 1 0 -500 100 U 50 50 1 1 W
+X PSET 10 500 -100 100 L 50 50 1 1 I
+X VREF 11 500 0 100 L 50 50 1 1 O
+X MSET 12 500 100 100 L 50 50 1 1 I
+X VMAG 13 500 200 100 L 50 50 1 1 O
+X MFLT 14 500 300 100 L 50 50 1 1 P
+X INPA 2 -500 300 100 R 50 50 1 1 I
+X OFSA 3 -500 200 100 R 50 50 1 1 P
+X VPOS 4 0 500 100 D 50 50 1 1 W
+X OFSB 5 -500 0 100 R 50 50 1 1 P
+X INPB 6 -500 100 100 R 50 50 1 1 I
+X COMM 7 100 -500 100 U 50 50 1 1 W
+X PFLT 8 500 -300 100 L 50 50 1 1 P
+X VPHS 9 500 -200 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
