@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "Vector Network Analyser"
 Date "2019-04-24"
 Rev "0.1"
@@ -230,5 +230,11 @@ S 1200 1000 900  950
 U 5CDF14FF
 F0 "RFSource" 50
 F1 "RFSource.sch" 50
+$EndSheet
+$Sheet
+S 950  4900 1200 1400
+U 5CDF1C56
+F0 "BatteryManagement" 50
+F1 "BatteryManagement.sch" 50
 $EndSheet
 $EndSCHEMATC
