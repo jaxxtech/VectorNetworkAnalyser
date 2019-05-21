@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -57,4 +57,22 @@ Wire Wire Line
 	6250 1500 6250 1650
 Text HLabel 6650 1500 1    50   Input ~ 0
 Aref
+Text HLabel 4800 2000 0    50   Input ~ 0
+VmagIn
+Text HLabel 4800 2200 0    50   Input ~ 0
+VphaseIn
+Text HLabel 4800 2450 0    50   Input ~ 0
+VrefIn
+Text HLabel 4800 2650 0    50   Input ~ 0
+DataNegIn
+Text HLabel 4800 2900 0    50   Input ~ 0
+DataPosIn
+Text HLabel 4800 3150 0    50   Input ~ 0
+SrcCtlOut
+Text HLabel 4800 3300 0    50   Input ~ 0
+ACtrlOut
+Text HLabel 4800 3450 0    50   Input ~ 0
+BCtrlOut
+Text HLabel 4800 1750 0    50   Input ~ 0
+RFControl
 $EndSCHEMATC

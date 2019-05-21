@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title "Vector Network Analyser"
 Date "2019-04-24"
 Rev "0.1"
@@ -220,21 +220,147 @@ ACtrl
 Text Label 5650 5500 0    50   ~ 0
 BCtrl
 $Sheet
-S 8100 2000 900  950 
-U 5CD1CF30
-F0 "ControlSystem.sch" 50
-F1 "ControlSystem.sch" 50
-$EndSheet
-$Sheet
 S 1800 2050 900  950 
 U 5CDF14FF
 F0 "RFSource" 50
 F1 "RFSource.sch" 50
+F2 "RFOut" O L 1800 2750 50 
+F3 "RFCtrl" I R 2700 2400 50 
 $EndSheet
 $Sheet
-S 3900 1000 1200 1400
+S 5800 1050 1200 1400
 U 5CDF1C56
 F0 "BatteryManagement" 50
 F1 "BatteryManagement.sch" 50
+F2 "USB5V" I L 5800 1300 50 
+F3 "USBGND" I L 5800 1550 50 
+F4 "3v3supply" O R 7000 2150 50 
+F5 "5vsupply" O R 7000 1950 50 
+F6 "CellPos" B R 7000 1350 50 
+F7 "CellNeg" B R 7000 1550 50 
 $EndSheet
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5CE2753D
+P 4500 1350
+F 0 "J?" H 4557 1817 50  0000 C CNN
+F 1 "USB_B_Micro" H 4557 1726 50  0000 C CNN
+F 2 "" H 4650 1300 50  0001 C CNN
+F 3 "~" H 4650 1300 50  0001 C CNN
+	1    4500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1150 5500 1150
+Wire Wire Line
+	5500 1150 5500 1300
+Wire Wire Line
+	5500 1300 5800 1300
+Wire Wire Line
+	4400 1750 4450 1750
+Wire Wire Line
+	4450 1750 4450 1800
+Wire Wire Line
+	4450 1800 5500 1800
+Wire Wire Line
+	5500 1800 5500 1550
+Wire Wire Line
+	5500 1550 5800 1550
+Connection ~ 4450 1750
+Wire Wire Line
+	4450 1750 4500 1750
+$Sheet
+S 9500 2300 900  950 
+U 5CD1CF30
+F0 "ControlSystem.sch" 50
+F1 "ControlSystem.sch" 50
+F2 "Aref" I L 9500 2400 50 
+F3 "VmagIn" I L 9500 3000 50 
+F4 "VphaseIn" I L 9500 3150 50 
+F5 "VrefIn" I L 9500 2850 50 
+F6 "DataNegIn" I R 10400 2550 50 
+F7 "DataPosIn" I R 10400 2700 50 
+F8 "SrcCtlOut" O R 10400 2850 50 
+F9 "ACtrlOut" O R 10400 2950 50 
+F10 "BCtrlOut" O R 10400 3100 50 
+F11 "RFControl" I L 9500 2600 50 
+$EndSheet
+Wire Wire Line
+	9150 4300 9200 4300
+Wire Wire Line
+	9200 4300 9200 2850
+Wire Wire Line
+	9200 2850 9500 2850
+Wire Wire Line
+	9150 4700 9250 4700
+Wire Wire Line
+	9250 4700 9250 3000
+Wire Wire Line
+	9250 3000 9500 3000
+Wire Wire Line
+	9150 4800 9300 4800
+Wire Wire Line
+	9300 4800 9300 3150
+Wire Wire Line
+	9300 3150 9500 3150
+Wire Wire Line
+	10400 2550 10950 2550
+Wire Wire Line
+	10400 2700 10950 2700
+Text Label 10950 2550 0    50   ~ 0
+D-
+Text Label 10950 2700 0    50   ~ 0
+D+
+NoConn ~ 4800 1550
+Wire Wire Line
+	4800 1350 5100 1350
+Wire Wire Line
+	4800 1450 5100 1450
+Text Label 5100 1350 0    50   ~ 0
+D+
+Text Label 5100 1450 0    50   ~ 0
+D-
+Wire Wire Line
+	10400 2850 10950 2850
+Wire Wire Line
+	10400 2950 10950 2950
+Wire Wire Line
+	10400 3100 10950 3100
+Text Label 10950 2850 0    50   ~ 0
+SrcCtrl
+Text Label 10950 2950 0    50   ~ 0
+ACtrl
+Text Label 10950 3100 0    50   ~ 0
+BCtrl
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CE4F062
+P 7500 1400
+F 0 "J?" H 7528 1376 50  0000 L CNN
+F 1 "Battery Cell Connection" H 7528 1285 50  0000 L CNN
+F 2 "" H 7500 1400 50  0001 C CNN
+F 3 "~" H 7500 1400 50  0001 C CNN
+	1    7500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1350 7300 1350
+Wire Wire Line
+	7300 1350 7300 1400
+Wire Wire Line
+	7000 1550 7300 1550
+Wire Wire Line
+	7300 1550 7300 1500
+Wire Wire Line
+	1700 4350 1450 4350
+Wire Wire Line
+	1450 4350 1450 2750
+Wire Wire Line
+	1450 2750 1800 2750
+Wire Wire Line
+	2700 2400 5450 2400
+Wire Wire Line
+	5450 2400 5450 2600
+Wire Wire Line
+	5450 2600 9500 2600
 $EndSCHEMATC
