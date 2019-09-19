@@ -14,88 +14,142 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF_Switch:ADG918BRM SWs?
-U 1 1 5CC6F338
-P 5150 2750
-AR Path="/5CC6F338" Ref="SWs?"  Part="1" 
-AR Path="/5CC6DDE1/5CC6F338" Ref="SWs1"  Part="1" 
-AR Path="/5CCA83E4/5CC6F338" Ref="SWs?"  Part="1" 
-AR Path="/5CCA873A/5CC6F338" Ref="SWs?"  Part="1" 
-F 0 "SWs1" H 4900 3100 50  0000 C CNN
-F 1 "ADG918BRM" H 5400 3200 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5150 2300 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG918_919.pdf" H 5100 2950 50  0001 C CNN
-	1    5150 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5CC702A7
-P 6400 2600
-AR Path="/5CC702A7" Ref="C?"  Part="1" 
-AR Path="/5CC6DDE1/5CC702A7" Ref="C1"  Part="1" 
-AR Path="/5CCA83E4/5CC702A7" Ref="C?"  Part="1" 
-AR Path="/5CCA873A/5CC702A7" Ref="C?"  Part="1" 
-F 0 "C1" H 6492 2646 50  0000 L CNN
-F 1 "10u" H 6492 2555 50  0000 L CNN
-F 2 "" H 6400 2600 50  0001 C CNN
-F 3 "~" H 6400 2600 50  0001 C CNN
-	1    6400 2600
-	1    0    0    -1  
-$EndComp
-Text HLabel 4650 2650 0    50   Input ~ 0
-SrcIn
-Text HLabel 5650 2550 2    50   Input ~ 0
-SrcOutA
-Text HLabel 5650 2750 2    50   Input ~ 0
-SrcOutB
-$Comp
-L power:GNDD #PWR012
-U 1 1 5CCA53F1
-P 5150 3300
-AR Path="/5CC6DDE1/5CCA53F1" Ref="#PWR012"  Part="1" 
-AR Path="/5CCA83E4/5CCA53F1" Ref="#PWR?"  Part="1" 
-AR Path="/5CCA873A/5CCA53F1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR012" H 5150 3050 50  0001 C CNN
-F 1 "GNDD" H 5154 3145 50  0000 C CNN
-F 2 "" H 5150 3300 50  0001 C CNN
-F 3 "" H 5150 3300 50  0001 C CNN
-	1    5150 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR011
-U 1 1 5CCA5AC1
-P 5150 2200
-AR Path="/5CC6DDE1/5CCA5AC1" Ref="#PWR011"  Part="1" 
-AR Path="/5CCA83E4/5CCA5AC1" Ref="#PWR?"  Part="1" 
-AR Path="/5CCA873A/5CCA5AC1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR011" H 5150 2050 50  0001 C CNN
-F 1 "VDD" H 5167 2373 50  0000 C CNN
-F 2 "" H 5150 2200 50  0001 C CNN
-F 3 "" H 5150 2200 50  0001 C CNN
-	1    5150 2200
-	1    0    0    -1  
-$EndComp
-Text HLabel 4650 2850 0    50   Input ~ 0
+Text HLabel 3150 3400 0    50   Input ~ 0
 Ctrl
+Text HLabel 4250 1500 0    50   Input ~ 0
+SrcOutB
+Text HLabel 5250 1500 2    50   Input ~ 0
+SrcOutA
+Text HLabel 4900 3600 3    50   Input ~ 0
+SrcIn
+$Comp
+L vna-rescue:HMC284 U2
+U 1 1 5D841F80
+P 4800 2650
+F 0 "U2" H 5178 2721 50  0000 L CNN
+F 1 "HMC284" H 5178 2630 50  0000 L CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm_ThermalVias" H 4550 2700 50  0001 C CNN
+F 3 "" H 4550 2700 50  0001 C CNN
+	1    4800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5D843902
+P 4800 1900
+F 0 "#PWR016" H 4800 1650 50  0001 C CNN
+F 1 "GND" H 4805 1727 50  0000 C CNN
+F 2 "" H 4800 1900 50  0001 C CNN
+F 3 "" H 4800 1900 50  0001 C CNN
+	1    4800 1900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5150 2200 6400 2200
+	4700 2100 4700 1900
 Wire Wire Line
-	6400 2200 6400 2500
+	4700 1900 4800 1900
 Wire Wire Line
-	5150 2200 5150 2250
-Connection ~ 5150 2200
+	4800 1900 4900 1900
 Wire Wire Line
-	5150 3250 5150 3300
+	4900 1900 4900 2100
+Connection ~ 4800 1900
+NoConn ~ 5050 3150
+$Comp
+L Device:C_Small C3
+U 1 1 5D84B78C
+P 4900 3350
+F 0 "C3" H 4992 3396 50  0000 L CNN
+F 1 "100n" H 4992 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4900 3350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5150 3300 6400 3300
+	4900 3150 4900 3250
 Wire Wire Line
-	6400 2700 6400 3300
-Connection ~ 5150 3300
-Text GLabel 5800 2200 1    50   Input ~ 0
-VDD
-Text GLabel 5800 3300 3    50   Input ~ 0
-GNDD
+	4900 3450 4900 3600
+$Comp
+L Device:C_Small C1
+U 1 1 5D84E6D7
+P 4250 1800
+F 0 "C1" H 4342 1846 50  0000 L CNN
+F 1 "100n" H 4342 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 1800 50  0001 C CNN
+F 3 "~" H 4250 1800 50  0001 C CNN
+	1    4250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5D84EC63
+P 5250 1800
+F 0 "C2" H 5342 1846 50  0000 L CNN
+F 1 "100n" H 5342 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5250 1800 50  0001 C CNN
+F 3 "~" H 5250 1800 50  0001 C CNN
+	1    5250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2100 5250 2100
+Wire Wire Line
+	5250 2100 5250 1900
+Wire Wire Line
+	4550 2100 4250 2100
+Wire Wire Line
+	4250 2100 4250 1900
+Wire Wire Line
+	5250 1700 5250 1500
+Wire Wire Line
+	4250 1700 4250 1500
+$Comp
+L 74xx:74HCT04 U1
+U 1 1 5D84F697
+P 3650 3400
+F 0 "U1" H 3650 3250 50  0000 C CNN
+F 1 "74HCT04" H 3650 3150 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3650 3400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3650 3400 50  0001 C CNN
+	1    3650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U1
+U 2 1 5D852517
+P 4300 4050
+F 0 "U1" H 4300 4367 50  0000 C CNN
+F 1 "74HCT04" H 4300 4276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4300 4050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 4050 50  0001 C CNN
+	2    4300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3400 3950 3650
+Wire Wire Line
+	3950 4050 4000 4050
+Wire Wire Line
+	3950 3650 4550 3650
+Wire Wire Line
+	4550 3650 4550 3150
+Connection ~ 3950 3650
+Wire Wire Line
+	3950 3650 3950 4050
+Wire Wire Line
+	4600 4050 4700 4050
+Wire Wire Line
+	4700 4050 4700 3150
+Wire Wire Line
+	3150 3400 3350 3400
+Text Notes 3350 3900 0    50   ~ 0
+Hex Inverter
+Wire Notes Line
+	3250 3200 3250 4300
+Wire Notes Line
+	3250 4300 4800 4300
+Wire Notes Line
+	4800 4300 4800 3200
+Wire Notes Line
+	4800 3200 3250 3200
 $EndSCHEMATC

@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+LIBS:vna-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3100 2000 0    50   Input ~ 0
+USB5V
+Text HLabel 2550 2000 0    50   Input ~ 0
+USBGND
+Text HLabel 3400 1700 1    50   Output ~ 0
+5vsupply
+Wire Wire Line
+	3250 2750 3400 2750
+Wire Wire Line
+	3400 2750 3600 2750
+Connection ~ 3400 2750
+Wire Wire Line
+	3800 2750 4000 2750
+Wire Wire Line
+	4000 3050 4000 3150
+Wire Wire Line
+	3400 2950 3400 3050
+Wire Wire Line
+	2950 3050 2950 3150
+Wire Wire Line
+	2400 2750 2650 2750
+Text Notes 2400 1600 0    50   ~ 0
+Arduino Nano \nPower Supply\nwith 5v auto selector
+Wire Wire Line
+	2550 2000 2650 2000
+Wire Wire Line
+	2650 2000 2650 2100
+Wire Wire Line
+	3400 1700 3400 2000
+$Comp
+L Device:D D1
+U 1 1 5DCF4604
+P 3250 2000
+F 0 "D1" H 3250 1784 50  0000 C CNN
+F 1 "SS1P3L" H 3250 1875 50  0000 C CNN
+F 2 "" H 3250 2000 50  0001 C CNN
+F 3 "~" H 3250 2000 50  0001 C CNN
+	1    3250 2000
+	-1   0    0    1   
+$EndComp
+Connection ~ 3400 2000
+Wire Wire Line
+	3400 2000 3400 2750
+$Comp
+L power:GND #PWR025
+U 1 1 5DCF4779
+P 2650 2100
+F 0 "#PWR025" H 2650 1850 50  0001 C CNN
+F 1 "GND" H 2655 1927 50  0000 C CNN
+F 2 "" H 2650 2100 50  0001 C CNN
+F 3 "" H 2650 2100 50  0001 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5DCF49C0
+P 4000 3150
+F 0 "#PWR029" H 4000 2900 50  0001 C CNN
+F 1 "GND" H 4005 2977 50  0000 C CNN
+F 2 "" H 4000 3150 50  0001 C CNN
+F 3 "" H 4000 3150 50  0001 C CNN
+	1    4000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DCF519B
+P 4000 2900
+F 0 "D2" V 4039 2783 50  0000 R CNN
+F 1 "LED" V 3948 2783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4000 2900 50  0001 C CNN
+F 3 "~" H 4000 2900 50  0001 C CNN
+	1    4000 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5DCF5AD8
+P 3700 2750
+F 0 "R9" V 3896 2750 50  0000 C CNN
+F 1 "1k" V 3805 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 2750 50  0001 C CNN
+F 3 "~" H 3700 2750 50  0001 C CNN
+	1    3700 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDC #PWR026
+U 1 1 5DCF65AC
+P 2400 2750
+F 0 "#PWR026" H 2400 2650 50  0001 C CNN
+F 1 "VDC" H 2400 3025 50  0000 C CNN
+F 2 "" H 2400 2750 50  0001 C CNN
+F 3 "" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 2550 2750 1    50   Input ~ 0
+Vin
+$Comp
+L Regulator_Linear:LM1117-5.0 U6
+U 1 1 5DCF72A5
+P 2950 2750
+F 0 "U6" H 2950 2992 50  0000 C CNN
+F 1 "LM1117-5.0" H 2950 2901 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2950 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2950 2750 50  0001 C CNN
+	1    2950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5DCF7F52
+P 2950 3150
+F 0 "#PWR028" H 2950 2900 50  0001 C CNN
+F 1 "GND" H 2955 2977 50  0000 C CNN
+F 2 "" H 2950 3150 50  0001 C CNN
+F 3 "" H 2950 3150 50  0001 C CNN
+	1    2950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5DCF87C0
+P 3400 2850
+F 0 "C15" H 3492 2896 50  0000 L CNN
+F 1 "1u" H 3492 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3400 2850 50  0001 C CNN
+F 3 "~" H 3400 2850 50  0001 C CNN
+	1    3400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5DCF90A4
+P 3400 3050
+F 0 "#PWR027" H 3400 2800 50  0001 C CNN
+F 1 "GND" H 3405 2877 50  0000 C CNN
+F 2 "" H 3400 3050 50  0001 C CNN
+F 3 "" H 3400 3050 50  0001 C CNN
+	1    3400 3050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2150 1150 2150 3400
+Wire Notes Line
+	2150 3400 4350 3400
+Wire Notes Line
+	4350 3400 4350 1150
+Wire Notes Line
+	4350 1150 2150 1150
+$EndSCHEMATC

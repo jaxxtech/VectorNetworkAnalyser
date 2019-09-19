@@ -82,9 +82,9 @@ F4 "Rev1In" I L 6050 5250 50
 F5 "Rev2In" I L 6050 5400 50 
 $EndSheet
 Text Label 2800 5050 0    50   ~ 0
-SrcB
+SrcB_50ohm
 Text Label 2800 4000 0    50   ~ 0
-SrcA
+SrcA_50ohm
 Wire Wire Line
 	4700 5600 5400 5600
 Wire Wire Line
@@ -93,27 +93,23 @@ Wire Wire Line
 	5400 5400 6050 5400
 Wire Wire Line
 	5250 5250 6050 5250
-Wire Wire Line
-	4650 5350 4700 5350
-Wire Wire Line
-	4700 5350 4700 5450
 $Comp
-L power:GNDA #PWR01
+L power:GND #PWR06
 U 1 1 5CCAEFF7
 P 5100 3750
-F 0 "#PWR01" H 5100 3500 50  0001 C CNN
-F 1 "GNDA" H 5105 3577 50  0000 C CNN
+F 0 "#PWR06" H 5100 3500 50  0001 C CNN
+F 1 "GND" H 5105 3577 50  0000 C CNN
 F 2 "" H 5100 3750 50  0001 C CNN
 F 3 "" H 5100 3750 50  0001 C CNN
 	1    5100 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR02
+L power:GND #PWR07
 U 1 1 5CCAF63F
 P 5150 5250
-F 0 "#PWR02" H 5150 5000 50  0001 C CNN
-F 1 "GNDA" H 5155 5077 50  0000 C CNN
+F 0 "#PWR07" H 5150 5000 50  0001 C CNN
+F 1 "GND" H 5155 5077 50  0000 C CNN
 F 2 "" H 5150 5250 50  0001 C CNN
 F 3 "" H 5150 5250 50  0001 C CNN
 	1    5150 5250
@@ -129,14 +125,14 @@ Wire Wire Line
 	5050 5350 5050 5250
 Wire Wire Line
 	5050 5250 5150 5250
-Text Label 5700 4050 0    50   ~ 0
-FwdA
+Text Label 5450 4050 0    50   ~ 0
+FwdA_50ohm
 Text Label 5250 4200 0    50   ~ 0
-FwdB
+FwdB_50ohm
 Text Label 5500 5250 0    50   ~ 0
-RevA
+RevA_50ohm
 Text Label 5500 5400 0    50   ~ 0
-RevB
+RevB_50ohm
 $Sheet
 S 7850 4150 1050 800 
 U 5CCB994F
@@ -165,8 +161,8 @@ F 3 " ~" H 4950 5150 50  0001 C CNN
 	1    4950 5150
 	1    0    0    -1  
 $EndComp
-Text Label 4700 5450 0    50   ~ 0
-FwdB
+Text Label 4850 5550 0    50   ~ 0
+FwdB_50ohm
 Text Label 7450 4800 0    50   ~ 0
 Fmeasured
 Text Label 7450 4250 0    50   ~ 0
@@ -182,129 +178,95 @@ ACtrl
 Text Label 5450 5600 0    50   ~ 0
 BCtrl
 $Sheet
-S 5250 1500 1200 1400
+S 6500 1100 1200 1400
 U 5CDF1C56
-F0 "BatteryManagement" 50
-F1 "BatteryManagement.sch" 50
-F2 "USB5V" I L 5250 1750 50 
-F3 "USBGND" I L 5250 2000 50 
-F4 "3v3supply" O R 6450 2600 50 
-F5 "5vsupply" O R 6450 2400 50 
-F6 "CellPos" B R 6450 1800 50 
-F7 "CellNeg" B R 6450 2000 50 
+F0 "PowerManagement" 50
+F1 "PowerManagement.sch" 50
+F2 "USB5V" I L 6500 1350 50 
+F3 "USBGND" I L 6500 1600 50 
+F4 "5vsupply" O R 7700 2000 50 
+F5 "Vin" I L 6500 2350 50 
 $EndSheet
 $Comp
 L Connector:USB_B_Micro J1
 U 1 1 5CE2753D
-P 3950 1800
-F 0 "J1" H 4007 2267 50  0000 C CNN
-F 1 "USB_B_Micro" H 4007 2176 50  0000 C CNN
-F 2 "" H 4100 1750 50  0001 C CNN
-F 3 "~" H 4100 1750 50  0001 C CNN
-	1    3950 1800
+P 5200 1400
+F 0 "J1" H 5257 1867 50  0000 C CNN
+F 1 "USB_B_Micro" H 5257 1776 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 5350 1350 50  0001 C CNN
+F 3 "~" H 5350 1350 50  0001 C CNN
+	1    5200 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 1600 4950 1600
+	5500 1200 6200 1200
 Wire Wire Line
-	4950 1600 4950 1750
+	6200 1200 6200 1350
 Wire Wire Line
-	4950 1750 5250 1750
+	6200 1350 6500 1350
 Wire Wire Line
-	3850 2200 3900 2200
+	5100 1800 5150 1800
 Wire Wire Line
-	3900 2200 3900 2250
+	5150 1800 5150 1850
 Wire Wire Line
-	3900 2250 4950 2250
+	5150 1850 5600 1850
 Wire Wire Line
-	4950 2250 4950 2000
+	6200 1850 6200 1600
 Wire Wire Line
-	4950 2000 5250 2000
-Connection ~ 3900 2200
+	6200 1600 6500 1600
+Connection ~ 5150 1800
 Wire Wire Line
-	3900 2200 3950 2200
+	5150 1800 5200 1800
 $Sheet
 S 9250 2300 900  950 
 U 5CD1CF30
 F0 "ControlSystem.sch" 50
 F1 "ControlSystem.sch" 50
-F2 "Aref" I L 9250 2400 50 
-F3 "VmagIn" I L 9250 3000 50 
-F4 "VphaseIn" I L 9250 3150 50 
-F5 "VrefIn" I L 9250 2850 50 
-F6 "DataNegIn" I R 10150 2550 50 
-F7 "DataPosIn" I R 10150 2700 50 
-F8 "SrcCtlOut" O R 10150 2850 50 
-F9 "ACtrlOut" O R 10150 2950 50 
-F10 "BCtrlOut" O R 10150 3100 50 
-F11 "RFControl" I L 9250 2600 50 
+F2 "Aref" I R 10150 2700 50 
+F3 "VmagIn" I L 9250 3100 50 
+F4 "VphaseIn" I L 9250 3200 50 
+F5 "VrefIn" I L 9250 3000 50 
+F6 "DataNegIn" I R 10150 2800 50 
+F7 "DataPosIn" I R 10150 2900 50 
+F8 "SrcCtlOut" O R 10150 3000 50 
+F9 "ACtrlOut" O R 10150 3100 50 
+F10 "BCtrlOut" O R 10150 3200 50 
+F11 "AD9851_W_CLK" O L 9250 2350 50 
+F12 "AD9851_FQ_UD" O L 9250 2450 50 
+F13 "AD9851_DATA" O L 9250 2550 50 
+F14 "AD9851__RESET" O L 9250 2650 50 
 $EndSheet
 Wire Wire Line
 	8900 4300 8950 4300
 Wire Wire Line
-	8950 4300 8950 2850
-Wire Wire Line
-	8950 2850 9250 2850
-Wire Wire Line
 	8900 4700 9000 4700
 Wire Wire Line
-	9000 4700 9000 3000
-Wire Wire Line
-	9000 3000 9250 3000
-Wire Wire Line
 	8900 4800 9050 4800
-Wire Wire Line
-	9050 4800 9050 3150
-Wire Wire Line
-	9050 3150 9250 3150
-Wire Wire Line
-	10150 2550 10700 2550
-Wire Wire Line
-	10150 2700 10700 2700
-Text Label 10700 2550 0    50   ~ 0
+Text Label 10700 2800 0    50   ~ 0
 D-
-Text Label 10700 2700 0    50   ~ 0
+Text Label 10700 2900 0    50   ~ 0
 D+
-NoConn ~ 4250 2000
+NoConn ~ 5500 1600
 Wire Wire Line
-	4250 1800 4550 1800
+	5500 1400 5800 1400
 Wire Wire Line
-	4250 1900 4550 1900
-Text Label 4550 1800 0    50   ~ 0
+	5500 1500 5800 1500
+Text Label 5800 1400 0    50   ~ 0
 D+
-Text Label 4550 1900 0    50   ~ 0
+Text Label 5800 1500 0    50   ~ 0
 D-
 Wire Wire Line
-	10150 2850 10700 2850
-Wire Wire Line
-	10150 2950 10700 2950
+	10150 3000 10700 3000
 Wire Wire Line
 	10150 3100 10700 3100
-Text Label 10700 2850 0    50   ~ 0
+Wire Wire Line
+	10150 3200 10700 3200
+Text Label 10700 3000 0    50   ~ 0
 SrcCtrl
-Text Label 10700 2950 0    50   ~ 0
-ACtrl
 Text Label 10700 3100 0    50   ~ 0
+ACtrl
+Text Label 10700 3200 0    50   ~ 0
 BCtrl
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5CE4F062
-P 6950 1850
-F 0 "J2" H 6978 1826 50  0000 L CNN
-F 1 "Battery Cell Connection" H 6978 1735 50  0000 L CNN
-F 2 "" H 6950 1850 50  0001 C CNN
-F 3 "~" H 6950 1850 50  0001 C CNN
-	1    6950 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 1800 6750 1800
-Wire Wire Line
-	6750 1800 6750 1850
-Wire Wire Line
-	6450 2000 6750 2000
-Wire Wire Line
-	6750 2000 6750 1950
 Wire Wire Line
 	1450 4350 1200 4350
 Wire Wire Line
@@ -355,20 +317,173 @@ Wire Wire Line
 	4800 4050 4800 4200
 Wire Wire Line
 	4800 4200 4600 4200
-Wire Wire Line
-	9250 2600 8750 2600
-Text Label 2700 3250 2    50   ~ 0
-RFCtrl
-Text Label 8750 2600 0    50   ~ 0
-RFCtrl
-Wire Wire Line
-	2450 3250 2700 3250
 $Sheet
 S 1550 2900 900  950 
 U 5CDF14FF
 F0 "RFSource" 50
 F1 "RFSource.sch" 50
 F2 "RFOut" O L 1550 3600 50 
-F3 "RFCtrl" I R 2450 3250 50 
+F3 "W_CLK" I R 2450 3000 50 
+F4 "FQ_UD" I R 2450 3100 50 
+F5 "DATA" I R 2450 3200 50 
+F6 "RF_RESET" I R 2450 3300 50 
 $EndSheet
+$Comp
+L 74xx:74HCT04 U1
+U 7 1 5D8669BB
+P 1350 1400
+F 0 "U1" H 1580 1446 50  0000 L CNN
+F 1 "74HCT04" H 1580 1355 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1350 1400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1350 1400 50  0001 C CNN
+	7    1350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5D86818F
+P 1350 1900
+F 0 "#PWR03" H 1350 1650 50  0001 C CNN
+F 1 "GND" H 1355 1727 50  0000 C CNN
+F 2 "" H 1350 1900 50  0001 C CNN
+F 3 "" H 1350 1900 50  0001 C CNN
+	1    1350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D869326
+P 1350 900
+AR Path="/5CD1CF30/5D869326" Ref="#PWR?"  Part="1" 
+AR Path="/5D869326" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 1350 750 50  0001 C CNN
+F 1 "+5V" H 1365 1073 50  0000 C CNN
+F 2 "" H 1350 900 50  0001 C CNN
+F 3 "" H 1350 900 50  0001 C CNN
+	1    1350 900 
+	1    0    0    -1  
+$EndComp
+Text Label 4750 5150 1    50   ~ 0
+pt2_50ohm
+Text Label 4650 4000 0    50   ~ 0
+pt1_50ohm
+Wire Wire Line
+	4650 5350 4750 5350
+Wire Wire Line
+	4750 5350 4750 5550
+Wire Wire Line
+	4750 5550 4850 5550
+Text Label 1450 3600 2    50   ~ 0
+SRC_50ohm
+$Comp
+L power:+5V #PWR04
+U 1 1 5DC9C0CE
+P 7900 2000
+F 0 "#PWR04" H 7900 1850 50  0001 C CNN
+F 1 "+5V" H 7915 2173 50  0000 C CNN
+F 2 "" H 7900 2000 50  0001 C CNN
+F 3 "" H 7900 2000 50  0001 C CNN
+	1    7900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DC9DA29
+P 5600 1850
+F 0 "#PWR02" H 5600 1600 50  0001 C CNN
+F 1 "GND" H 5605 1677 50  0000 C CNN
+F 2 "" H 5600 1850 50  0001 C CNN
+F 3 "" H 5600 1850 50  0001 C CNN
+	1    5600 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 1850
+Wire Wire Line
+	5600 1850 6200 1850
+Wire Wire Line
+	7700 2000 7900 2000
+$Comp
+L Connector:Barrel_Jack J2
+U 1 1 5DD01A83
+P 5850 2450
+F 0 "J2" H 5907 2775 50  0000 C CNN
+F 1 "DC_IN_Conn" H 5907 2684 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 5900 2410 50  0001 C CNN
+F 3 "~" H 5900 2410 50  0001 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2350 6500 2350
+$Comp
+L power:GND #PWR05
+U 1 1 5DD044B3
+P 6300 2600
+F 0 "#PWR05" H 6300 2350 50  0001 C CNN
+F 1 "GND" H 6305 2427 50  0000 C CNN
+F 2 "" H 6300 2600 50  0001 C CNN
+F 3 "" H 6300 2600 50  0001 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2550 6300 2550
+Wire Wire Line
+	6300 2550 6300 2600
+Text Notes 4800 2550 0    50   ~ 0
+DC In supply \nmust be above 6v\nand capable of 1A
+Text Notes 1600 1200 0    50   ~ 0
+Hex Inverter Supply
+Wire Wire Line
+	10150 2900 10700 2900
+Wire Wire Line
+	10150 2800 10700 2800
+Wire Wire Line
+	9050 4800 9050 3200
+Wire Wire Line
+	9050 3200 9250 3200
+Wire Wire Line
+	9000 4700 9000 3100
+Wire Wire Line
+	9000 3100 9250 3100
+Wire Wire Line
+	8950 4300 8950 3000
+Wire Wire Line
+	8950 3000 9250 3000
+Wire Wire Line
+	10150 2700 10700 2700
+Text Label 10700 2700 0    50   ~ 0
+Aref
+Wire Wire Line
+	9250 2350 8850 2350
+Wire Wire Line
+	9250 2450 8850 2450
+Wire Wire Line
+	9250 2550 8850 2550
+Wire Wire Line
+	9250 2650 8850 2650
+Text Label 8850 2350 0    50   ~ 0
+W_CLK
+Text Label 8850 2450 0    50   ~ 0
+FQ_UD
+Text Label 8850 2550 0    50   ~ 0
+DATA
+Text Label 8850 2650 0    50   ~ 0
+RF_RESET
+Text Label 2550 3000 0    50   ~ 0
+W_CLK
+Text Label 2550 3100 0    50   ~ 0
+FQ_UD
+Text Label 2550 3200 0    50   ~ 0
+DATA
+Text Label 2550 3300 0    50   ~ 0
+RF_RESET
+Wire Wire Line
+	2450 3000 2550 3000
+Wire Wire Line
+	2450 3100 2550 3100
+Wire Wire Line
+	2450 3200 2550 3200
+Wire Wire Line
+	2450 3300 2550 3300
 $EndSCHEMATC
