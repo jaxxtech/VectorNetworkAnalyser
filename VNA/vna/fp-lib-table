@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name vna)(type KiCad)(uri "D:/Users/Ben/OneDrive - Swinburne University/Engineering FYP/design files/VNA/VectorNetworkAnalyser/VNA/vna.pretty")(options "")(descr ""))
+)

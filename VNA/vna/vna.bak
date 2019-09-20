@@ -22,7 +22,7 @@ U 1 1 5CC13FA2
 P 4850 3650
 F 0 "J3" V 4732 3750 50  0000 L CNN
 F 1 "Pt1" H 4823 3750 50  0000 L CNN
-F 2 "" H 4850 3650 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 4850 3650 50  0001 C CNN
 F 3 " ~" H 4850 3650 50  0001 C CNN
 	1    4850 3650
 	1    0    0    -1  
@@ -32,20 +32,10 @@ S 3300 3850 1300 900
 U 5CC1CC6B
 F0 "DirectionalCoupler1" 50
 F1 "DirectionalCoupler1.sch" 50
-F2 "RFIn" I L 3300 4000 50 
-F3 "RFOut" O R 4600 4000 50 
+F2 "RFOut1" O R 4600 4000 50 
+F3 "RFIn1" I L 3300 4000 50 
 F4 "Fwd1" O R 4600 4200 50 
 F5 "Rev1" O R 4600 4350 50 
-$EndSheet
-$Sheet
-S 3350 5000 1300 900 
-U 5CC6A089
-F0 "DirectionalCoupler2" 50
-F1 "DirectionalCoupler2.sch" 50
-F2 "RFIn" I L 3350 5150 50 
-F3 "RFOut" O R 4650 5150 50 
-F4 "Fwd2" O R 4650 5350 50 
-F5 "Rev2" O R 4650 5500 50 
 $EndSheet
 $Sheet
 S 1450 4050 1050 1000
@@ -156,7 +146,7 @@ U 1 1 5CC17996
 P 4950 5150
 F 0 "J4" V 4832 5250 50  0000 L CNN
 F 1 "Pt2" H 4923 5250 50  0000 L CNN
-F 2 "" H 4950 5150 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 4950 5150 50  0001 C CNN
 F 3 " ~" H 4950 5150 50  0001 C CNN
 	1    4950 5150
 	1    0    0    -1  
@@ -331,36 +321,36 @@ $EndSheet
 $Comp
 L 74xx:74HCT04 U1
 U 7 1 5D8669BB
-P 1350 1400
-F 0 "U1" H 1580 1446 50  0000 L CNN
-F 1 "74HCT04" H 1580 1355 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1350 1400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1350 1400 50  0001 C CNN
-	7    1350 1400
+P 2975 1875
+F 0 "U1" H 3205 1921 50  0000 L CNN
+F 1 "74HCT04" H 3205 1830 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2975 1875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2975 1875 50  0001 C CNN
+	7    2975 1875
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5D86818F
-P 1350 1900
-F 0 "#PWR03" H 1350 1650 50  0001 C CNN
-F 1 "GND" H 1355 1727 50  0000 C CNN
-F 2 "" H 1350 1900 50  0001 C CNN
-F 3 "" H 1350 1900 50  0001 C CNN
-	1    1350 1900
+P 2975 2375
+F 0 "#PWR03" H 2975 2125 50  0001 C CNN
+F 1 "GND" H 2980 2202 50  0000 C CNN
+F 2 "" H 2975 2375 50  0001 C CNN
+F 3 "" H 2975 2375 50  0001 C CNN
+	1    2975 2375
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5D869326
-P 1350 900
+P 2975 1375
 AR Path="/5CD1CF30/5D869326" Ref="#PWR?"  Part="1" 
 AR Path="/5D869326" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 1350 750 50  0001 C CNN
-F 1 "+5V" H 1365 1073 50  0000 C CNN
-F 2 "" H 1350 900 50  0001 C CNN
-F 3 "" H 1350 900 50  0001 C CNN
-	1    1350 900 
+F 0 "#PWR01" H 2975 1225 50  0001 C CNN
+F 1 "+5V" H 2990 1548 50  0000 C CNN
+F 2 "" H 2975 1375 50  0001 C CNN
+F 3 "" H 2975 1375 50  0001 C CNN
+	1    2975 1375
 	1    0    0    -1  
 $EndComp
 Text Label 4750 5150 1    50   ~ 0
@@ -432,7 +422,7 @@ Wire Wire Line
 	6300 2550 6300 2600
 Text Notes 4800 2550 0    50   ~ 0
 DC In supply \nmust be above 6v\nand capable of 1A
-Text Notes 1600 1200 0    50   ~ 0
+Text Notes 3225 1675 0    50   ~ 0
 Hex Inverter Supply
 Wire Wire Line
 	10150 2900 10700 2900
@@ -486,4 +476,14 @@ Wire Wire Line
 	2450 3200 2550 3200
 Wire Wire Line
 	2450 3300 2550 3300
+$Sheet
+S 3350 5000 1300 900 
+U 5CC6A089
+F0 "DirectionalCoupler2" 50
+F1 "DirectionalCoupler2.sch" 50
+F2 "Fwd2" O R 4650 5350 50 
+F3 "Rev2" O R 4650 5500 50 
+F4 "RFOut2" O R 4650 5150 50 
+F5 "RFIn2" I L 3350 5150 50 
+$EndSheet
 $EndSCHEMATC
