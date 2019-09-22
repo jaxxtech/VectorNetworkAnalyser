@@ -65,7 +65,7 @@ U 1 1 5D669C44
 P 1800 6750
 F 0 "J8" H 1800 7700 50  0000 C CNN
 F 1 "tx_d12" H 1900 7600 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 1800 6750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Horizontal" H 1800 6750 50  0001 C CNN
 F 3 "~" H 1800 6750 50  0001 C CNN
 	1    1800 6750
 	1    0    0    -1  
@@ -326,7 +326,7 @@ U 1 1 5D672505
 P 3100 6750
 F 0 "J9" H 3100 7650 50  0000 C CNN
 F 1 "vin_d13" H 3200 7550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 3100 6750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Horizontal" H 3100 6750 50  0001 C CNN
 F 3 "~" H 3100 6750 50  0001 C CNN
 	1    3100 6750
 	1    0    0    -1  
