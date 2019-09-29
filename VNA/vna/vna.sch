@@ -14,8 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 700  7550 0    50   ~ 0
-To DO:\n-work out how to have "50ohms everywhere" apply at Pt1 and Pt2\n-work out length matching for source traces through to Pt1 and Pt2\n-work out length matching for lines from switches to ad8302 and switches from directional couplers\n-develop supporting circuitry for ad8302 \n(https://nebula.wsimg.com/ac0cb1589745e6e290db6e409752d2f5?AccessKeyId=DAA432FA80C5DABC0234&disposition=0&alloworigin=1)\n-select micro-controller\n-select wireless interface for micro-controller\n-write controller software\n-write receiver software or adapt off the shelf existing software\n-develop source circuitry\n-revesre in/out on the fwd and reverse switches
+Text Notes 1525 7150 0    50   ~ 10
+To DO:\n-work out how to have "50ohms everywhere" apply at Pt1 and Pt2\n-work out length matching for source traces through to Pt1 and Pt2\n-work out length matching for lines from switches to ad8302 and switches from directional couplers\n-refine RF source (considder AGC)
 $Comp
 L Connector:Conn_Coaxial J3
 U 1 1 5CC13FA2
@@ -71,10 +71,10 @@ F3 "RevOut" O R 7100 5400 50
 F4 "Rev1In" I L 6050 5250 50 
 F5 "Rev2In" I L 6050 5400 50 
 $EndSheet
-Text Label 2800 5050 0    50   ~ 0
-SrcB_50ohm
-Text Label 2800 4000 0    50   ~ 0
-SrcA_50ohm
+Text Label 2800 5050 0    50   ~ 10
+Src_50ohm_B
+Text Label 2800 4000 0    50   ~ 10
+Src_50ohm_A
 Wire Wire Line
 	4700 5600 5400 5600
 Wire Wire Line
@@ -115,14 +115,14 @@ Wire Wire Line
 	5050 5350 5050 5250
 Wire Wire Line
 	5050 5250 5150 5250
-Text Label 5450 4050 0    50   ~ 0
-FwdA_50ohm
-Text Label 5250 4200 0    50   ~ 0
-FwdB_50ohm
-Text Label 5500 5250 0    50   ~ 0
-RevA_50ohm
-Text Label 5500 5400 0    50   ~ 0
-RevB_50ohm
+Text Label 5375 4050 0    50   ~ 10
+Fwd_50ohm_A
+Text Label 5250 4200 0    50   ~ 10
+Fwd_50ohm_B
+Text Label 5500 5250 0    50   ~ 10
+Rev_50ohm_A
+Text Label 5500 5400 0    50   ~ 10
+Rev_50ohm_B
 $Sheet
 S 7850 4150 1050 800 
 U 5CCB994F
@@ -151,21 +151,21 @@ F 3 " ~" H 4950 5150 50  0001 C CNN
 	1    4950 5150
 	1    0    0    -1  
 $EndComp
-Text Label 4850 5550 0    50   ~ 0
-FwdB_50ohm
-Text Label 7450 4800 0    50   ~ 0
+Text Label 4850 5550 0    50   ~ 10
+Fwd_50ohm_B
+Text Label 7450 4800 0    50   ~ 10
 Fmeasured
-Text Label 7450 4250 0    50   ~ 0
+Text Label 7450 4250 0    50   ~ 10
 Freference
 Wire Wire Line
 	6050 5600 5450 5600
 Wire Wire Line
 	1450 4500 900  4500
-Text Label 900  4500 0    50   ~ 0
+Text Label 900  4500 0    50   ~ 10
 SrcCtrl
-Text Label 5250 4350 0    50   ~ 0
+Text Label 5250 4350 0    50   ~ 10
 ACtrl
-Text Label 5450 5600 0    50   ~ 0
+Text Label 5450 5600 0    50   ~ 10
 BCtrl
 $Sheet
 S 6500 1100 1200 1400
@@ -232,18 +232,18 @@ Wire Wire Line
 	8900 4700 9000 4700
 Wire Wire Line
 	8900 4800 9050 4800
-Text Label 10700 2800 0    50   ~ 0
+Text Label 10700 2800 0    50   ~ 10
 D-
-Text Label 10700 2900 0    50   ~ 0
+Text Label 10700 2900 0    50   ~ 10
 D+
 NoConn ~ 5500 1600
 Wire Wire Line
 	5500 1400 5800 1400
 Wire Wire Line
 	5500 1500 5800 1500
-Text Label 5800 1400 0    50   ~ 0
+Text Label 5800 1400 0    50   ~ 10
 D+
-Text Label 5800 1500 0    50   ~ 0
+Text Label 5800 1500 0    50   ~ 10
 D-
 Wire Wire Line
 	10150 3000 10700 3000
@@ -251,11 +251,11 @@ Wire Wire Line
 	10150 3100 10700 3100
 Wire Wire Line
 	10150 3200 10700 3200
-Text Label 10700 3000 0    50   ~ 0
+Text Label 10700 3000 0    50   ~ 10
 SrcCtrl
-Text Label 10700 3100 0    50   ~ 0
+Text Label 10700 3100 0    50   ~ 10
 ACtrl
-Text Label 10700 3200 0    50   ~ 0
+Text Label 10700 3200 0    50   ~ 10
 BCtrl
 Wire Wire Line
 	1450 4350 1200 4350
@@ -353,9 +353,9 @@ F 3 "" H 2975 1325 50  0001 C CNN
 	1    2975 1325
 	1    0    0    -1  
 $EndComp
-Text Label 4750 5150 1    50   ~ 0
+Text Label 4750 5150 1    50   ~ 10
 pt2_50ohm
-Text Label 4650 4000 0    50   ~ 0
+Text Label 4650 4000 0    50   ~ 10
 pt1_50ohm
 Wire Wire Line
 	4650 5350 4750 5350
@@ -363,7 +363,7 @@ Wire Wire Line
 	4750 5350 4750 5550
 Wire Wire Line
 	4750 5550 4850 5550
-Text Label 1450 3600 2    50   ~ 0
+Text Label 1450 3600 2    50   ~ 10
 SRC_50ohm
 $Comp
 L power:+5V #PWR04
@@ -420,9 +420,9 @@ Wire Wire Line
 	6150 2550 6300 2550
 Wire Wire Line
 	6300 2550 6300 2600
-Text Notes 4800 2550 0    50   ~ 0
+Text Notes 4800 2550 0    50   ~ 10
 DC In supply \nmust be above 6v\nand capable of 1A
-Text Notes 3225 1675 0    50   ~ 0
+Text Notes 3225 1675 0    50   ~ 10
 Hex Inverter Supply
 Wire Wire Line
 	10150 2900 10700 2900
@@ -442,7 +442,7 @@ Wire Wire Line
 	8950 3000 9250 3000
 Wire Wire Line
 	10150 2700 10700 2700
-Text Label 10700 2700 0    50   ~ 0
+Text Label 10700 2700 0    50   ~ 10
 Aref
 Wire Wire Line
 	9250 2350 8850 2350
@@ -452,21 +452,21 @@ Wire Wire Line
 	9250 2550 8850 2550
 Wire Wire Line
 	9250 2650 8850 2650
-Text Label 8850 2350 0    50   ~ 0
+Text Label 8850 2350 0    50   ~ 10
 W_CLK
-Text Label 8850 2450 0    50   ~ 0
+Text Label 8850 2450 0    50   ~ 10
 FQ_UD
-Text Label 8850 2550 0    50   ~ 0
+Text Label 8850 2550 0    50   ~ 10
 DATA
-Text Label 8850 2650 0    50   ~ 0
+Text Label 8850 2650 0    50   ~ 10
 RF_RESET
-Text Label 2550 3000 0    50   ~ 0
+Text Label 2550 3000 0    50   ~ 10
 W_CLK
-Text Label 2550 3100 0    50   ~ 0
+Text Label 2550 3100 0    50   ~ 10
 FQ_UD
-Text Label 2550 3200 0    50   ~ 0
+Text Label 2550 3200 0    50   ~ 10
 DATA
-Text Label 2550 3300 0    50   ~ 0
+Text Label 2550 3300 0    50   ~ 10
 RF_RESET
 Wire Wire Line
 	2450 3000 2550 3000
@@ -492,7 +492,7 @@ U 1 1 5D96EE93
 P 2225 1875
 F 0 "C30" H 2317 1921 50  0000 L CNN
 F 1 "0.1u" H 2317 1830 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2225 1875 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2225 1875 50  0001 C CNN
 F 3 "~" H 2225 1875 50  0001 C CNN
 	1    2225 1875
 	1    0    0    -1  

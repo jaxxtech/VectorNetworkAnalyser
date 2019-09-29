@@ -4,23 +4,23 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 4 10
+Title "Rev Switch"
+Date "2019-09-25"
+Rev "0.1"
+Comp "Benjamin Jackson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7500 5000 2    50   Input ~ 0
+Text HLabel 7500 5000 2    50   Input ~ 10
 RevOut
-Text HLabel 7800 2800 2    50   Input ~ 0
+Text HLabel 7800 2800 2    50   Input ~ 10
 Rev1In
-Text HLabel 6800 2800 0    50   Input ~ 0
+Text HLabel 6800 2800 0    50   Input ~ 10
 Rev2In
-Text HLabel 5700 4700 0    50   Input ~ 0
+Text HLabel 5700 4700 0    50   Input ~ 10
 Ctrl
 $Comp
 L vna-rescue:HMC284 U?
@@ -69,7 +69,7 @@ AR Path="/5CCA83E4/5D8644F7" Ref="C?"  Part="1"
 AR Path="/5CCA993F/5D8644F7" Ref="C6"  Part="1" 
 F 0 "C6" H 7542 4696 50  0000 L CNN
 F 1 "100n" H 7542 4605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7450 4650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7450 4650 50  0001 C CNN
 F 3 "~" H 7450 4650 50  0001 C CNN
 	1    7450 4650
 	1    0    0    -1  
@@ -85,7 +85,7 @@ AR Path="/5CCA83E4/5D8644FE" Ref="C?"  Part="1"
 AR Path="/5CCA993F/5D8644FE" Ref="C4"  Part="1" 
 F 0 "C4" H 6892 3146 50  0000 L CNN
 F 1 "100n" H 6892 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6800 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6800 3100 50  0001 C CNN
 F 3 "~" H 6800 3100 50  0001 C CNN
 	1    6800 3100
 	1    0    0    -1  
@@ -99,7 +99,7 @@ AR Path="/5CCA83E4/5D864504" Ref="C?"  Part="1"
 AR Path="/5CCA993F/5D864504" Ref="C5"  Part="1" 
 F 0 "C5" H 7892 3146 50  0000 L CNN
 F 1 "100n" H 7892 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7800 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7800 3100 50  0001 C CNN
 F 3 "~" H 7800 3100 50  0001 C CNN
 	1    7800 3100
 	1    0    0    -1  
@@ -165,7 +165,7 @@ Wire Wire Line
 	7450 5000 7500 5000
 Wire Wire Line
 	7450 4750 7450 5000
-Text Notes 5950 5200 0    50   ~ 0
+Text Notes 5950 5200 0    50   ~ 10
 Hex Inverter
 Wire Notes Line
 	5800 4500 5800 5600

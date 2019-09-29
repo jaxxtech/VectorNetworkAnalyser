@@ -5,22 +5,22 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "RF Source Switch"
+Date "2019-09-25"
+Rev "0.1"
+Comp "Benjamin Jackson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3150 3400 0    50   Input ~ 0
+Text HLabel 3150 3400 0    50   Input ~ 10
 Ctrl
-Text HLabel 4250 1500 0    50   Input ~ 0
+Text HLabel 4250 1500 0    50   Input ~ 10
 SrcOutB
-Text HLabel 5250 1500 2    50   Input ~ 0
+Text HLabel 5250 1500 2    50   Input ~ 10
 SrcOutA
-Text HLabel 4900 3600 3    50   Input ~ 0
+Text HLabel 4900 3600 3    50   Input ~ 10
 SrcIn
 $Comp
 L vna-rescue:HMC284 U2
@@ -60,7 +60,7 @@ U 1 1 5D84B78C
 P 4900 3350
 F 0 "C3" H 4992 3396 50  0000 L CNN
 F 1 "100n" H 4992 3305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4900 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 3350 50  0001 C CNN
 F 3 "~" H 4900 3350 50  0001 C CNN
 	1    4900 3350
 	1    0    0    -1  
@@ -75,7 +75,7 @@ U 1 1 5D84E6D7
 P 4250 1800
 F 0 "C1" H 4342 1846 50  0000 L CNN
 F 1 "100n" H 4342 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4250 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 1800 50  0001 C CNN
 F 3 "~" H 4250 1800 50  0001 C CNN
 	1    4250 1800
 	1    0    0    -1  
@@ -86,7 +86,7 @@ U 1 1 5D84EC63
 P 5250 1800
 F 0 "C2" H 5342 1846 50  0000 L CNN
 F 1 "100n" H 5342 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5250 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5250 1800 50  0001 C CNN
 F 3 "~" H 5250 1800 50  0001 C CNN
 	1    5250 1800
 	1    0    0    -1  
@@ -142,7 +142,7 @@ Wire Wire Line
 	4700 4050 4700 3150
 Wire Wire Line
 	3150 3400 3350 3400
-Text Notes 3350 3900 0    50   ~ 0
+Text Notes 3350 3900 0    50   ~ 10
 Hex Inverter
 Wire Notes Line
 	3250 3200 3250 4300

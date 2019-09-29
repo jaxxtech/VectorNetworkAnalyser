@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 10
-Title ""
+Title "Directional Coupler 1"
 Date ""
-Rev ""
-Comp ""
+Rev "0.1"
+Comp "Benjamin Jackson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -37,7 +37,7 @@ AR Path="/5CC2F156/5CF4AFA0" Ref="R?"  Part="1"
 AR Path="/5CC6A089/5CF4AFA0" Ref="R?"  Part="1" 
 F 0 "R2" H 6743 4346 50  0000 L CNN
 F 1 "50" H 6743 4255 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6675 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6675 4300 50  0001 C CNN
 F 3 "~" H 6675 4300 50  0001 C CNN
 	1    6675 4300
 	1    0    0    -1  
@@ -51,7 +51,7 @@ AR Path="/5CC2F156/5CF4AFA6" Ref="R?"  Part="1"
 AR Path="/5CC6A089/5CF4AFA6" Ref="R?"  Part="1" 
 F 0 "R1" H 3993 4171 50  0000 L CNN
 F 1 "50" H 3993 4080 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3925 4125 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3925 4125 50  0001 C CNN
 F 3 "~" H 3925 4125 50  0001 C CNN
 	1    3925 4125
 	1    0    0    -1  
@@ -88,13 +88,13 @@ F 3 "" H 6675 4400 50  0001 C CNN
 	1    6675 4400
 	1    0    0    -1  
 $EndComp
-Text HLabel 3875 4000 0    50   Output ~ 0
+Text HLabel 3875 4000 0    50   Output ~ 10
 Fwd1
-Text HLabel 6725 4100 2    50   Output ~ 0
+Text HLabel 6725 4100 2    50   Output ~ 10
 Rev1
-Text HLabel 7175 3700 2    50   Output ~ 0
+Text HLabel 7175 3700 2    50   Output ~ 10
 RFOut1
-Text HLabel 4125 3700 0    50   Input ~ 0
+Text HLabel 4125 3700 0    50   Input ~ 10
 RFIn1
 $Comp
 L power:GND #PWR09
@@ -125,7 +125,7 @@ Wire Wire Line
 	3425 3800 4175 3800
 Wire Wire Line
 	5675 4200 6150 4200
-Text Notes 5850 3550 0    50   ~ 0
+Text Notes 5850 3550 0    50   ~ 10
 dotted side (*) of the \ntransformer is the \ninside of the core\nwound centre first
 Wire Wire Line
 	4175 3900 4175 4000
@@ -190,12 +190,12 @@ Wire Wire Line
 	4050 4400 4050 4575
 Wire Wire Line
 	4050 4575 7100 4575
-Text Notes 4175 3725 0    50   ~ 0
+Text Notes 4175 3725 0    50   ~ 10
 *
-Text Notes 4200 3925 0    50   ~ 0
+Text Notes 4200 3925 0    50   ~ 10
 *
-Text Notes 5600 4125 0    50   ~ 0
+Text Notes 5600 4125 0    50   ~ 10
 *
-Text Notes 5600 4325 0    50   ~ 0
+Text Notes 5600 4325 0    50   ~ 10
 *
 $EndSCHEMATC

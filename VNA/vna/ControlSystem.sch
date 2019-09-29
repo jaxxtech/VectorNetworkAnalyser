@@ -5,20 +5,20 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Controller"
+Date "2019-09-25"
+Rev "0.1"
+Comp "Benjamin Jackson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7550 6950 0    50   ~ 0
+Text Notes 7550 6950 0    50   ~ 10
 The design for this control system is based upon the open hardware of the arduino.\nadapted from electronoobs design\nhttp://www.electronoobs.com/eng_arduino_tut31_sch3.php
-Text HLabel 7800 2700 0    50   Input ~ 0
+Text HLabel 7800 2700 0    50   Input ~ 10
 DataNegIn
-Text HLabel 7800 2600 0    50   Input ~ 0
+Text HLabel 7800 2600 0    50   Input ~ 10
 DataPosIn
 $Comp
 L Device:R_Small R16
@@ -26,7 +26,7 @@ U 1 1 5D609931
 P 5150 6600
 F 0 "R16" H 5350 6550 50  0000 R CNN
 F 1 "1k" H 5300 6650 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5150 6600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5150 6600 50  0001 C CNN
 F 3 "~" H 5150 6600 50  0001 C CNN
 	1    5150 6600
 	-1   0    0    1   
@@ -48,14 +48,14 @@ U 1 1 5D642689
 P 10000 2700
 F 0 "C21" V 9771 2700 50  0000 C CNN
 F 1 "100n" V 9862 2700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10000 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10000 2700 50  0001 C CNN
 F 3 "~" H 10000 2700 50  0001 C CNN
 	1    10000 2700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9500 2700 9900 2700
-Text Label 10250 2700 0    50   ~ 0
+Text Label 10250 2700 0    50   ~ 10
 RESET
 Wire Wire Line
 	10100 2700 10250 2700
@@ -70,7 +70,7 @@ F 3 "~" H 1800 6750 50  0001 C CNN
 	1    1800 6750
 	1    0    0    -1  
 $EndComp
-Text Notes 1750 5650 0    50   ~ 0
+Text Notes 1750 5650 0    50   ~ 10
 Arduino nano Header Pins - external
 $Comp
 L Connector:Conn_01x03_Male J6
@@ -83,7 +83,7 @@ F 3 "~" H 9150 5500 50  0001 C CNN
 	1    9150 5500
 	1    0    0    -1  
 $EndComp
-Text Notes 8150 5150 0    50   ~ 0
+Text Notes 8150 5150 0    50   ~ 10
 ICSP Headers
 $Comp
 L power:+5V #PWR046
@@ -113,7 +113,7 @@ F 3 "" H 9750 5600 50  0001 C CNN
 	1    9750 5600
 	1    0    0    -1  
 $EndComp
-Text Label 9750 5500 0    50   ~ 0
+Text Label 9750 5500 0    50   ~ 10
 MOSI_OC2_D11
 $Comp
 L power:VDC #PWR052
@@ -139,7 +139,7 @@ F 3 "" H 4150 6150 50  0001 C CNN
 	1    4150 6150
 	1    0    0    -1  
 $EndComp
-Text Label 3550 6250 0    50   ~ 0
+Text Label 3550 6250 0    50   ~ 10
 RESET
 $Comp
 L power:+5V #PWR055
@@ -208,14 +208,14 @@ U 1 1 5D608419
 P 5500 6900
 F 0 "R17" H 5441 6854 50  0000 R CNN
 F 1 "2k" H 5441 6945 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5500 6900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5500 6900 50  0001 C CNN
 F 3 "~" H 5500 6900 50  0001 C CNN
 	1    5500 6900
 	-1   0    0    1   
 $EndComp
 NoConn ~ 5800 6800
 NoConn ~ 5800 6300
-Text Notes 6250 6800 0    50   ~ 0
+Text Notes 6250 6800 0    50   ~ 10
 1:EN\n2:VCC\n3:GND\n4:TXD\n5:RXD\n9:STATE
 $Comp
 L Connector:Conn_01x06_Female J7
@@ -236,11 +236,11 @@ Wire Notes Line
 	8050 5050 10400 5050
 Wire Notes Line
 	10400 5050 10400 5850
-Text Label 8650 5400 0    50   ~ 0
+Text Label 8650 5400 0    50   ~ 10
 MISO_D12
 Wire Wire Line
 	8400 5600 8650 5600
-Text Label 8650 5600 0    50   ~ 0
+Text Label 8650 5600 0    50   ~ 10
 RESET
 Wire Wire Line
 	8400 5500 8650 5500
@@ -257,7 +257,7 @@ F 3 "~" H 8200 5500 50  0001 C CNN
 	1    8200 5500
 	1    0    0    -1  
 $EndComp
-Text Label 8650 5500 0    50   ~ 0
+Text Label 8650 5500 0    50   ~ 10
 SCK_D13
 Wire Notes Line
 	1700 7500 1700 5550
@@ -267,13 +267,13 @@ Wire Wire Line
 	5300 6600 5300 6500
 Wire Wire Line
 	5300 6600 5800 6600
-Text Label 5150 6450 1    50   ~ 0
+Text Label 5150 6450 1    50   ~ 10
 AIN1_D7
 Wire Wire Line
 	5150 6500 5150 6450
-Text Label 5300 6500 1    50   ~ 0
+Text Label 5300 6500 1    50   ~ 10
 OC0A_AIN0_D6
-Text Notes 4950 5950 0    50   ~ 0
+Text Notes 4950 5950 0    50   ~ 10
 Bluetooth module connection
 Wire Notes Line
 	4900 5850 4900 7300
@@ -283,23 +283,23 @@ Wire Notes Line
 	6550 7300 6550 5850
 Wire Notes Line
 	6550 5850 4900 5850
-Text Label 3550 6550 0    50   ~ 0
+Text Label 3550 6550 0    50   ~ 10
 SS1(LOW)_A6_D25
-Text Label 3550 6450 0    50   ~ 0
+Text Label 3550 6450 0    50   ~ 10
 MOSI1_A7_D26
-Text Label 3550 6650 0    50   ~ 0
+Text Label 3550 6650 0    50   ~ 10
 SCL_A5__D19
-Text Label 3550 6750 0    50   ~ 0
+Text Label 3550 6750 0    50   ~ 10
 SDA_A4_D18
-Text Label 3550 6850 0    50   ~ 0
+Text Label 3550 6850 0    50   ~ 10
 A3_D17
-Text Label 3550 6950 0    50   ~ 0
+Text Label 3550 6950 0    50   ~ 10
 A2_D16
-Text Label 3550 7050 0    50   ~ 0
+Text Label 3550 7050 0    50   ~ 10
 SCK1_A1_D15
-Text Label 3550 7150 0    50   ~ 0
+Text Label 3550 7150 0    50   ~ 10
 MISO1_A0_D14
-Text HLabel 3500 7250 2    50   Input ~ 0
+Text HLabel 3500 7250 2    50   Input ~ 10
 Aref
 $Comp
 L power:+3.3V #PWR056
@@ -312,11 +312,11 @@ F 3 "" H 3750 7350 50  0001 C CNN
 	1    3750 7350
 	1    0    0    -1  
 $EndComp
-Text Label 3500 7450 0    50   ~ 0
+Text Label 3500 7450 0    50   ~ 10
 SCK_D13
-Text Label 2100 7450 0    50   ~ 0
+Text Label 2100 7450 0    50   ~ 10
 RXD1_MISO_D12
-Text Label 2100 7350 0    50   ~ 0
+Text Label 2100 7350 0    50   ~ 10
 TXD1_MOSI_OC2_D11
 Wire Wire Line
 	3300 6050 3700 6050
@@ -361,25 +361,25 @@ Wire Wire Line
 	2000 7450 2100 7450
 Wire Wire Line
 	2000 7350 2100 7350
-Text Label 2100 7250 0    50   ~ 0
+Text Label 2100 7250 0    50   ~ 10
 SS(LOW)_OC1B_D10
 Wire Wire Line
 	2000 7250 2100 7250
-Text Label 2100 7050 0    50   ~ 0
+Text Label 2100 7050 0    50   ~ 10
 ICP_D8
-Text Label 2100 7150 0    50   ~ 0
+Text Label 2100 7150 0    50   ~ 10
 OC1A_D9
-Text Label 2100 6850 0    50   ~ 0
+Text Label 2100 6850 0    50   ~ 10
 OC0A_AIN0_D6
-Text Label 2100 6950 0    50   ~ 0
+Text Label 2100 6950 0    50   ~ 10
 AIN1_D7
-Text Label 2100 6750 0    50   ~ 0
+Text Label 2100 6750 0    50   ~ 10
 OC0B_D5
-Text Label 2100 6650 0    50   ~ 0
+Text Label 2100 6650 0    50   ~ 10
 D4
-Text Label 2100 6550 0    50   ~ 0
+Text Label 2100 6550 0    50   ~ 10
 OC3A_INT1_D3
-Text Label 2100 6450 0    50   ~ 0
+Text Label 2100 6450 0    50   ~ 10
 OC3B_OC4B_INT0_D2
 $Comp
 L power:GND #PWR054
@@ -410,13 +410,13 @@ Wire Wire Line
 	2000 6450 2100 6450
 Wire Wire Line
 	2000 6350 2950 6350
-Text Label 2100 6250 0    50   ~ 0
+Text Label 2100 6250 0    50   ~ 10
 RESET
 Wire Wire Line
 	3300 6150 4150 6150
-Text Label 2100 6150 0    50   ~ 0
+Text Label 2100 6150 0    50   ~ 10
 RXD1_MISO_D12
-Text Label 2100 6050 0    50   ~ 0
+Text Label 2100 6050 0    50   ~ 10
 TXD1_MOSI_OC2_D11
 Wire Wire Line
 	2000 6250 2100 6250
@@ -467,9 +467,9 @@ Wire Wire Line
 	9500 2300 9800 2300
 Wire Wire Line
 	9500 2400 9800 2400
-Text Label 9800 2300 0    50   ~ 0
+Text Label 9800 2300 0    50   ~ 10
 RX
-Text Label 9800 2400 0    50   ~ 0
+Text Label 9800 2400 0    50   ~ 10
 TX
 NoConn ~ 9500 2500
 NoConn ~ 9500 2600
@@ -523,7 +523,7 @@ U 1 1 5DB7EF7D
 P 9950 3500
 F 0 "R12" V 10146 3500 50  0000 C CNN
 F 1 "1k" V 10055 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9950 3500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9950 3500 50  0001 C CNN
 F 3 "~" H 9950 3500 50  0001 C CNN
 	1    9950 3500
 	0    1    1    0   
@@ -545,7 +545,7 @@ U 1 1 5DB9537C
 P 9950 3150
 F 0 "R10" V 10146 3150 50  0000 C CNN
 F 1 "1k" V 10055 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9950 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9950 3150 50  0001 C CNN
 F 3 "~" H 9950 3150 50  0001 C CNN
 	1    9950 3150
 	0    1    1    0   
@@ -622,34 +622,34 @@ U 1 1 5CD27A26
 P 2150 2150
 F 0 "C22" V 1921 2150 50  0000 C CNN
 F 1 "100n" V 2012 2150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2150 2150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2150 2150 50  0001 C CNN
 F 3 "~" H 2150 2150 50  0001 C CNN
 	1    2150 2150
 	0    1    1    0   
 $EndComp
-Text HLabel 2650 1200 1    50   Input ~ 0
+Text HLabel 2650 1200 1    50   Input ~ 10
 Aref
-Text HLabel 4550 3050 2    50   Input ~ 0
+Text HLabel 4550 3050 2    50   Input ~ 10
 VmagIn
-Text HLabel 4550 3250 2    50   Input ~ 0
+Text HLabel 4550 3250 2    50   Input ~ 10
 VphaseIn
-Text HLabel 4550 3150 2    50   Input ~ 0
+Text HLabel 4550 3150 2    50   Input ~ 10
 VrefIn
-Text HLabel 5850 1700 0    50   Output ~ 0
+Text HLabel 5850 1700 0    50   Output ~ 10
 SrcCtlOut
-Text HLabel 5850 1800 0    50   Output ~ 0
+Text HLabel 5850 1800 0    50   Output ~ 10
 ACtrlOut
-Text HLabel 5850 1900 0    50   Output ~ 0
+Text HLabel 5850 1900 0    50   Output ~ 10
 BCtrlOut
-Text HLabel 5200 4300 2    50   Output ~ 0
+Text HLabel 5200 4300 2    50   Output ~ 10
 AD9851_W_CLK
-Text HLabel 5200 4400 2    50   Output ~ 0
+Text HLabel 5200 4400 2    50   Output ~ 10
 AD9851_FQ_UD
-Text HLabel 5200 4500 2    50   Output ~ 0
+Text HLabel 5200 4500 2    50   Output ~ 10
 AD9851_DATA
-Text HLabel 5200 4600 2    50   Output ~ 0
+Text HLabel 5200 4600 2    50   Output ~ 10
 AD9851__RESET
-Text Label 4300 3650 0    50   ~ 0
+Text Label 4300 3650 0    50   ~ 10
 RESET
 Wire Wire Line
 	3300 1750 3300 1850
@@ -662,7 +662,7 @@ U 1 1 5D4DC8AF
 P 5100 3500
 F 0 "R13" H 5170 3546 50  0000 L CNN
 F 1 "1k" H 5170 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5030 3500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 3500 50  0001 C CNN
 F 3 "~" H 5100 3500 50  0001 C CNN
 	1    5100 3500
 	1    0    0    -1  
@@ -691,9 +691,9 @@ F 3 "" H 5900 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 3650 5900 3650
-Text Label 4100 2550 0    50   ~ 0
+Text Label 4100 2550 0    50   ~ 10
 RXD1_MISO_D12
-Text Label 4100 2450 0    50   ~ 0
+Text Label 4100 2450 0    50   ~ 10
 TXD1_MOSI_OC2_D11
 $Comp
 L power:GND #PWR048
@@ -721,21 +721,21 @@ Wire Wire Line
 	1950 2200 1950 2150
 Wire Wire Line
 	1950 2150 2050 2150
-Text Label 5300 3900 0    50   ~ 0
+Text Label 5300 3900 0    50   ~ 10
 RX
-Text Label 5900 4100 0    50   ~ 0
+Text Label 5900 4100 0    50   ~ 10
 TX
 Wire Wire Line
 	3850 2850 5150 2850
 Wire Wire Line
 	5150 2850 5150 2950
-Text Label 4100 2150 0    50   ~ 0
+Text Label 4100 2150 0    50   ~ 10
 ICP_D8
-Text Label 4100 2250 0    50   ~ 0
+Text Label 4100 2250 0    50   ~ 10
 OC1A_D9
-Text Label 4100 2350 0    50   ~ 0
+Text Label 4100 2350 0    50   ~ 10
 SS(LOW)_OC1B_D10
-Text Notes 3850 1050 0    50   ~ 0
+Text Notes 3850 1050 0    50   ~ 10
 ATMEGA328P\nDecoupling caps
 $Comp
 L Device:C_Small C18
@@ -743,7 +743,7 @@ U 1 1 5D5FADE6
 P 3600 1200
 F 0 "C18" H 3692 1246 50  0000 L CNN
 F 1 "1u" H 3692 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3600 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 1200 50  0001 C CNN
 F 3 "~" H 3600 1200 50  0001 C CNN
 	1    3600 1200
 	1    0    0    -1  
@@ -754,7 +754,7 @@ U 1 1 5D5FBDDC
 P 4250 1200
 F 0 "C20" H 4342 1246 50  0000 L CNN
 F 1 "1u" H 4342 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4250 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 1200 50  0001 C CNN
 F 3 "~" H 4250 1200 50  0001 C CNN
 	1    4250 1200
 	1    0    0    -1  
@@ -809,7 +809,7 @@ Wire Wire Line
 	3900 1100 4250 1100
 Wire Wire Line
 	3900 1300 4250 1300
-Text Notes 1500 1350 0    50   ~ 0
+Text Notes 1500 1350 0    50   ~ 10
 reference voltage from the \nAD8302this voltage will \nneed to be buffered as it \nseems to be dragged down \nby being connected to ARef
 Wire Wire Line
 	2250 2150 2450 2150
@@ -828,7 +828,7 @@ U 1 1 5D64C0FE
 P 4900 3900
 F 0 "R14" V 5000 3900 50  0000 C CNN
 F 1 "1k" V 4795 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4900 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 3900 50  0001 C CNN
 F 3 "~" H 4900 3900 50  0001 C CNN
 	1    4900 3900
 	0    1    1    0   
@@ -839,7 +839,7 @@ U 1 1 5D64DA32
 P 5600 4100
 F 0 "R15" V 5500 4100 50  0000 C CNN
 F 1 "1k" V 5705 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5600 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 4100 50  0001 C CNN
 F 3 "~" H 5600 4100 50  0001 C CNN
 	1    5600 4100
 	0    -1   -1   0   
@@ -864,7 +864,7 @@ U 1 1 5D654B9A
 P 5600 2500
 F 0 "R11" V 5796 2500 50  0000 C CNN
 F 1 "1k" V 5705 2500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5600 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 2500 50  0001 C CNN
 F 3 "~" H 5600 2500 50  0001 C CNN
 	1    5600 2500
 	0    -1   -1   0   
@@ -903,17 +903,17 @@ Wire Wire Line
 	6050 2500 6050 2600
 Wire Wire Line
 	5700 2500 5850 2500
-Text Label 3950 3050 0    50   ~ 0
+Text Label 3950 3050 0    50   ~ 10
 MISO1_A0_D14
-Text Label 3950 3150 0    50   ~ 0
+Text Label 3950 3150 0    50   ~ 10
 SCK1_A1_D15
-Text Label 3950 3250 0    50   ~ 0
+Text Label 3950 3250 0    50   ~ 10
 A2_D16
-Text Label 4250 3350 0    50   ~ 0
+Text Label 4250 3350 0    50   ~ 10
 A3_D17
-Text Label 4250 3450 0    50   ~ 0
+Text Label 4250 3450 0    50   ~ 10
 SDA_A4_D18
-Text Label 4250 3550 0    50   ~ 0
+Text Label 4250 3550 0    50   ~ 10
 SCL_A5__D19
 Wire Wire Line
 	3850 3350 4250 3350
@@ -921,13 +921,13 @@ Wire Wire Line
 	3850 3450 4250 3450
 Wire Wire Line
 	3850 3550 4250 3550
-Text Label 4100 2650 0    50   ~ 0
+Text Label 4100 2650 0    50   ~ 10
 SCK_D13
-Text Label 1900 4050 0    50   ~ 0
+Text Label 1900 4050 0    50   ~ 10
 SS1(LOW)_A6_D25
-Text Label 1900 3850 0    50   ~ 0
+Text Label 1875 3850 0    50   ~ 10
 ACO_SDA1_D23
-Text Label 1900 3950 0    50   ~ 0
+Text Label 1875 3950 0    50   ~ 10
 SCL1_D24
 Connection ~ 5100 3650
 Wire Wire Line
@@ -940,9 +940,9 @@ Wire Wire Line
 	3850 3150 4550 3150
 Wire Wire Line
 	3850 3250 4550 3250
-Text Label 3950 3850 0    50   ~ 0
+Text Label 3950 3850 0    50   ~ 10
 OC3A_RXD_D0
-Text Label 3950 3950 0    50   ~ 0
+Text Label 3950 3950 0    50   ~ 10
 OC4A_TXD_D1
 Wire Wire Line
 	3850 4050 4650 4050
@@ -968,19 +968,19 @@ Wire Wire Line
 	4500 4600 5200 4600
 Wire Wire Line
 	4500 4350 4500 4600
-Text Label 3900 4050 0    50   ~ 0
+Text Label 3900 4050 0    50   ~ 10
 OC3B_OC4B_INT0_D2
-Text Label 3900 4150 0    50   ~ 0
+Text Label 3900 4150 0    50   ~ 10
 OC3A_INT1_D3
-Text Label 3900 4250 0    50   ~ 0
+Text Label 3900 4250 0    50   ~ 10
 D4
-Text Label 3900 4350 0    50   ~ 0
+Text Label 3900 4350 0    50   ~ 10
 OC0B_D5
-Text Label 3900 4450 0    50   ~ 0
+Text Label 3900 4450 0    50   ~ 10
 OC0A_AIN0_D6
 Wire Wire Line
 	3850 4450 3900 4450
-Text Label 3900 4550 0    50   ~ 0
+Text Label 3900 4550 0    50   ~ 10
 AIN1_D7
 Wire Wire Line
 	3850 4550 3900 4550
@@ -994,16 +994,12 @@ Wire Wire Line
 	3850 2450 4100 2450
 Wire Wire Line
 	3850 2550 4100 2550
-Text Label 1900 4150 0    50   ~ 0
+Text Label 1900 4150 0    50   ~ 10
 MOSI1_A7_D26
 Wire Wire Line
 	1900 4150 2650 4150
 Wire Wire Line
 	1900 4050 2650 4050
-Wire Wire Line
-	1900 3950 2650 3950
-Wire Wire Line
-	1900 3850 2650 3850
 $Comp
 L power:+5V #PWR044
 U 1 1 5D852F39
@@ -1026,11 +1022,11 @@ F 3 "" H 3300 1750 50  0001 C CNN
 	1    3300 1750
 	1    0    0    -1  
 $EndComp
-Text Label 6000 1700 0    50   ~ 0
+Text Label 6000 1700 0    50   ~ 10
 ICP_D8
-Text Label 6000 1800 0    50   ~ 0
+Text Label 6000 1800 0    50   ~ 10
 OC1A_D9
-Text Label 6000 1900 0    50   ~ 0
+Text Label 6000 1900 0    50   ~ 10
 SS(LOW)_OC1B_D10
 Wire Wire Line
 	5850 1700 6000 1700
@@ -1038,7 +1034,7 @@ Wire Wire Line
 	5850 1800 6000 1800
 Wire Wire Line
 	5850 1900 6000 1900
-Text Notes 9050 1050 0    50   ~ 0
+Text Notes 9050 1050 0    50   ~ 10
 FTDI\nDecoupling caps
 $Comp
 L Device:C_Small C17
@@ -1046,7 +1042,7 @@ U 1 1 5DCB0741
 P 9450 1400
 F 0 "C17" H 9542 1446 50  0000 L CNN
 F 1 "100n" H 9542 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9450 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9450 1400 50  0001 C CNN
 F 3 "~" H 9450 1400 50  0001 C CNN
 	1    9450 1400
 	1    0    0    -1  
@@ -1115,7 +1111,7 @@ U 1 1 5D89B57C
 P 5550 3050
 F 0 "C27" V 5600 2975 50  0000 C CNN
 F 1 "C0G 22p" V 5600 3250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5550 3050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 3050 50  0001 C CNN
 F 3 "~" H 5550 3050 50  0001 C CNN
 	1    5550 3050
 	0    1    1    0   
@@ -1160,9 +1156,13 @@ U 1 1 5D8978DB
 P 5600 2700
 F 0 "C26" V 5550 2600 50  0000 C CNN
 F 1 "C0G 22p" V 5550 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5600 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 2700 50  0001 C CNN
 F 3 "~" H 5600 2700 50  0001 C CNN
 	1    5600 2700
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1875 3850 2650 3850
+Wire Wire Line
+	1875 3950 2650 3950
 $EndSCHEMATC

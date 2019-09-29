@@ -4,23 +4,23 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 8 10
+Title "Fwd Switch"
+Date "2019-09-25"
+Rev "0.1"
+Comp "Benjamin Jackson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6800 3850 2    50   Input ~ 0
+Text HLabel 6800 3850 2    50   Input ~ 10
 FwdOut
-Text HLabel 7100 1650 2    50   Input ~ 0
+Text HLabel 7100 1650 2    50   Input ~ 10
 Fwd1In
-Text HLabel 6100 1650 0    50   Input ~ 0
+Text HLabel 6100 1575 0    50   Input ~ 10
 Fwd2In
-Text HLabel 5000 3550 0    50   Input ~ 0
+Text HLabel 5000 3550 0    50   Input ~ 10
 Ctrl
 $Comp
 L vna-rescue:HMC284 U?
@@ -66,7 +66,7 @@ AR Path="/5CC6DDE1/5D85D761" Ref="C?"  Part="1"
 AR Path="/5CCA83E4/5D85D761" Ref="C25"  Part="1" 
 F 0 "C25" H 6842 3546 50  0000 L CNN
 F 1 "100n" H 6842 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6750 3500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6750 3500 50  0001 C CNN
 F 3 "~" H 6750 3500 50  0001 C CNN
 	1    6750 3500
 	1    0    0    -1  
@@ -81,7 +81,7 @@ AR Path="/5CC6DDE1/5D85D769" Ref="C?"  Part="1"
 AR Path="/5CCA83E4/5D85D769" Ref="C23"  Part="1" 
 F 0 "C23" H 6192 1996 50  0000 L CNN
 F 1 "100n" H 6192 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6100 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6100 1950 50  0001 C CNN
 F 3 "~" H 6100 1950 50  0001 C CNN
 	1    6100 1950
 	1    0    0    -1  
@@ -94,7 +94,7 @@ AR Path="/5CC6DDE1/5D85D76F" Ref="C?"  Part="1"
 AR Path="/5CCA83E4/5D85D76F" Ref="C24"  Part="1" 
 F 0 "C24" H 7192 1996 50  0000 L CNN
 F 1 "100n" H 7192 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7100 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7100 1950 50  0001 C CNN
 F 3 "~" H 7100 1950 50  0001 C CNN
 	1    7100 1950
 	1    0    0    -1  
@@ -107,8 +107,6 @@ Wire Wire Line
 	6400 2250 6100 2250
 Wire Wire Line
 	6100 2250 6100 2050
-Wire Wire Line
-	6100 1850 6100 1650
 $Comp
 L 74xx:74HCT04 U?
 U 3 1 5D85D77B
@@ -158,7 +156,7 @@ Wire Wire Line
 	6750 3850 6800 3850
 Wire Wire Line
 	6750 3600 6750 3850
-Text Notes 5200 4050 0    50   ~ 0
+Text Notes 5200 4050 0    50   ~ 10
 Hex Inverter
 Wire Notes Line
 	5050 3350 5050 4450
@@ -168,4 +166,6 @@ Wire Notes Line
 	6600 4450 6600 3350
 Wire Notes Line
 	6600 3350 5050 3350
+Wire Wire Line
+	6100 1575 6100 1850
 $EndSCHEMATC

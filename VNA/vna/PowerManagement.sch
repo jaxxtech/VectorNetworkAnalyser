@@ -5,20 +5,20 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 10
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Power Management"
+Date "2019-09-25"
+Rev "0.1"
+Comp "Benjamin Jackson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3100 2000 0    50   Input ~ 0
+Text HLabel 3100 2000 0    50   Input ~ 10
 USB5V
-Text HLabel 2550 2000 0    50   Input ~ 0
+Text HLabel 2550 2000 0    50   Input ~ 10
 USBGND
-Text HLabel 3400 1700 1    50   Output ~ 0
+Text HLabel 3400 1700 1    50   Output ~ 10
 5vsupply
 Wire Wire Line
 	3250 2750 3400 2750
@@ -35,7 +35,7 @@ Wire Wire Line
 	2950 3050 2950 3150
 Wire Wire Line
 	2400 2750 2650 2750
-Text Notes 2400 1600 0    50   ~ 0
+Text Notes 2400 1600 0    50   ~ 10
 Arduino Nano \nPower Supply\nwith 5v auto selector
 Wire Wire Line
 	2550 2000 2650 2000
@@ -83,8 +83,8 @@ $Comp
 L Device:LED D2
 U 1 1 5DCF519B
 P 4000 2900
-F 0 "D2" V 4039 2783 50  0000 R CNN
-F 1 "LED" V 3948 2783 50  0000 R CNN
+F 0 "D2" V 4125 2875 50  0000 R CNN
+F 1 "POWER_LED" V 4200 3025 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 4000 2900 50  0001 C CNN
 F 3 "~" H 4000 2900 50  0001 C CNN
 	1    4000 2900
@@ -96,7 +96,7 @@ U 1 1 5DCF5AD8
 P 3700 2750
 F 0 "R9" V 3896 2750 50  0000 C CNN
 F 1 "1k" V 3805 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3700 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 2750 50  0001 C CNN
 F 3 "~" H 3700 2750 50  0001 C CNN
 	1    3700 2750
 	0    -1   -1   0   
@@ -112,7 +112,7 @@ F 3 "" H 2400 2750 50  0001 C CNN
 	1    2400 2750
 	1    0    0    -1  
 $EndComp
-Text HLabel 2550 2750 1    50   Input ~ 0
+Text HLabel 2550 2750 1    50   Input ~ 10
 Vin
 $Comp
 L Regulator_Linear:LM1117-5.0 U6
@@ -142,7 +142,7 @@ U 1 1 5DCF87C0
 P 3400 2850
 F 0 "C15" H 3492 2896 50  0000 L CNN
 F 1 "1u" H 3492 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3400 2850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3400 2850 50  0001 C CNN
 F 3 "~" H 3400 2850 50  0001 C CNN
 	1    3400 2850
 	1    0    0    -1  
