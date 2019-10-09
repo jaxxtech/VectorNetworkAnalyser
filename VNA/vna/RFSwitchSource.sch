@@ -28,7 +28,7 @@ U 1 1 5D841F80
 P 4800 2650
 F 0 "U2" H 5178 2721 50  0000 L CNN
 F 1 "HMC284" H 5178 2630 50  0000 L CNN
-F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm_ThermalVias" H 4550 2700 50  0001 C CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm" H 4550 2700 50  0001 C CNN
 F 3 "" H 4550 2700 50  0001 C CNN
 	1    4800 2650
 	1    0    0    -1  
@@ -109,7 +109,7 @@ U 1 1 5D84F697
 P 3650 3400
 F 0 "U1" H 3650 3250 50  0000 C CNN
 F 1 "74HCT04" H 3650 3150 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3650 3400 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 3650 3400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3650 3400 50  0001 C CNN
 	1    3650 3400
 	1    0    0    -1  
@@ -120,26 +120,13 @@ U 2 1 5D852517
 P 4300 4050
 F 0 "U1" H 4300 4367 50  0000 C CNN
 F 1 "74HCT04" H 4300 4276 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4300 4050 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 4300 4050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 4050 50  0001 C CNN
 	2    4300 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 3400 3950 3650
-Wire Wire Line
 	3950 4050 4000 4050
-Wire Wire Line
-	3950 3650 4550 3650
-Wire Wire Line
-	4550 3650 4550 3150
-Connection ~ 3950 3650
-Wire Wire Line
-	3950 3650 3950 4050
-Wire Wire Line
-	4600 4050 4700 4050
-Wire Wire Line
-	4700 4050 4700 3150
 Wire Wire Line
 	3150 3400 3350 3400
 Text Notes 3350 3900 0    50   ~ 10
@@ -152,4 +139,17 @@ Wire Notes Line
 	4800 4300 4800 3200
 Wire Notes Line
 	4800 3200 3250 3200
+Wire Wire Line
+	4700 4050 4700 3150
+Wire Wire Line
+	4600 4050 4700 4050
+Wire Wire Line
+	3950 3400 3950 3650
+Wire Wire Line
+	3950 3650 3950 4050
+Connection ~ 3950 3650
+Wire Wire Line
+	3950 3650 4550 3650
+Wire Wire Line
+	4550 3650 4550 3150
 $EndSCHEMATC

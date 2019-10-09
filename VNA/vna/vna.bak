@@ -22,7 +22,7 @@ U 1 1 5CC13FA2
 P 4850 3650
 F 0 "J3" V 4732 3750 50  0000 L CNN
 F 1 "Pt1" H 4823 3750 50  0000 L CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 4850 3650 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 4850 3650 50  0001 C CNN
 F 3 " ~" H 4850 3650 50  0001 C CNN
 	1    4850 3650
 	1    0    0    -1  
@@ -118,7 +118,7 @@ Wire Wire Line
 Text Label 5375 4050 0    50   ~ 10
 Fwd_50ohm_A
 Text Label 5250 4200 0    50   ~ 10
-FwdB_50ohm
+Fwd_50ohm_B
 Text Label 5500 5250 0    50   ~ 10
 Rev_50ohm_A
 Text Label 5500 5400 0    50   ~ 10
@@ -146,7 +146,7 @@ U 1 1 5CC17996
 P 4950 5150
 F 0 "J4" V 4832 5250 50  0000 L CNN
 F 1 "Pt2" H 4923 5250 50  0000 L CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 4950 5150 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 4950 5150 50  0001 C CNN
 F 3 " ~" H 4950 5150 50  0001 C CNN
 	1    4950 5150
 	1    0    0    -1  
@@ -324,7 +324,7 @@ U 7 1 5D8669BB
 P 2975 1875
 F 0 "U1" H 3205 1921 50  0000 L CNN
 F 1 "74HCT04" H 3205 1830 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2975 1875 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 2975 1875 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2975 1875 50  0001 C CNN
 	7    2975 1875
 	1    0    0    -1  
@@ -398,7 +398,7 @@ U 1 1 5DD01A83
 P 5850 2450
 F 0 "J2" H 5907 2775 50  0000 C CNN
 F 1 "DC_IN_Conn" H 5907 2684 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 5900 2410 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 5900 2410 50  0001 C CNN
 F 3 "~" H 5900 2410 50  0001 C CNN
 	1    5850 2450
 	1    0    0    -1  

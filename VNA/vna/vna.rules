@@ -1,0 +1,85 @@
+
+(rules PCB vna
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 883)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(C1-Pad2)" "Net-(C2-Pad2)" "/SRC_50ohm" "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" /Fmeasured
+    "Net-(C6-Pad1)" /Receiver.sch/OffsetA /Freference "Net-(C10-Pad1)" "Net-(C11-Pad2)" "Net-(C12-Pad2)" "Net-(C14-Pad1)" +5V
+    "Net-(C21-Pad2)" /ControlSystem.sch/RESET "Net-(C23-Pad2)" "Net-(C24-Pad2)" "Net-(C25-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D4-Pad2)"
+    "Net-(D5-Pad1)" /D+ "/D-" /PowerManagement/USB5V VDC "/ControlSystem.sch/SCK_D13" "Net-(J7-Pad5)" "/ControlSystem.sch/OC0A_AIN0_D6"
+    /ACtrl /SrcCtrl "/ControlSystem.sch/AIN1_D7" /Receiver.sch/VMag "/Receiver.sch/VRef(1v7)" /Receiver.sch/VPhase "Net-(R7-Pad2)" "Net-(R8-Pad2)"
+    "Net-(R10-Pad2)" "Net-(R12-Pad2)" "/ControlSystem.sch/OC3A_RXD_D0" /ControlSystem.sch/RX /ControlSystem.sch/TX "/ControlSystem.sch/OC4A_TXD_D1" "Net-(U1-Pad10)" "Net-(U1-Pad12)"
+    /BCtrl "Net-(U1-Pad6)" "Net-(U1-Pad8)" "Net-(U1-Pad4)" "Net-(U1-Pad2)" /Aref "Net-(C26-Pad2)" "Net-(C27-Pad2)"
+    "Net-(C28-Pad2)" "/pt1_50ohm" "/pt2_50ohm" "/RF_RESET" /DATA "/FQ_UD" "/W_CLK" "Net-(R18-Pad2)"
+    "Net-(R21-Pad2)" "Net-(R22-Pad2)" "Net-(U4-Pad9)" "Net-(R20-Pad2)" "Net-(R23-Pad1)" "Net-(C9-Pad1)" "Net-(R24-Pad2)" "/Src_50ohm_B"
+    "/Src_50ohm_A" "/Rev_50ohm_B" "/Rev_50ohm_A" "/Fwd_50ohm_B" "/Fwd_50ohm_A"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

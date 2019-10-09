@@ -30,7 +30,7 @@ AR Path="/5CC6DDE1/5D85D74F" Ref="U?"  Part="1"
 AR Path="/5CCA83E4/5D85D74F" Ref="U9"  Part="1" 
 F 0 "U9" H 7028 2871 50  0000 L CNN
 F 1 "HMC284" H 7028 2780 50  0000 L CNN
-F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm_ThermalVias" H 6400 2850 50  0001 C CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm" H 6400 2850 50  0001 C CNN
 F 3 "" H 6400 2850 50  0001 C CNN
 	1    6650 2800
 	1    0    0    -1  
@@ -115,7 +115,7 @@ AR Path="/5CC6DDE1/5D85D77B" Ref="U?"  Part="1"
 AR Path="/5CCA83E4/5D85D77B" Ref="U1"  Part="3" 
 F 0 "U1" H 5500 3400 50  0000 C CNN
 F 1 "74HCT04" H 5500 3300 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5500 3550 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 5500 3550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5500 3550 50  0001 C CNN
 	3    5500 3550
 	1    0    0    -1  
@@ -128,7 +128,7 @@ AR Path="/5CC6DDE1/5D85D781" Ref="U?"  Part="2"
 AR Path="/5CCA83E4/5D85D781" Ref="U1"  Part="4" 
 F 0 "U1" H 6150 4517 50  0000 C CNN
 F 1 "74HCT04" H 6150 4426 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6150 4200 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 6150 4200 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6150 4200 50  0001 C CNN
 	4    6150 4200
 	1    0    0    -1  

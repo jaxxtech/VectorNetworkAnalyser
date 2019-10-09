@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6900 3400 2    50   Output ~ 10
+Text HLabel 8150 3525 2    50   Output ~ 10
 RFOut
 Text HLabel 3500 4900 0    50   Input ~ 10
 W_CLK
@@ -114,17 +114,17 @@ Wire Wire Line
 	4850 4000 5350 4000
 Wire Wire Line
 	5350 4000 5350 3525
-Text Notes 5625 3200 0    50   ~ 10
+Text Notes 5650 3225 0    50   ~ 10
 RC Bandpass Filter
 $Comp
 L power:GND #PWR0102
 U 1 1 5D858459
-P 6200 3725
-F 0 "#PWR0102" H 6200 3475 50  0001 C CNN
-F 1 "GND" H 6205 3552 50  0000 C CNN
-F 2 "" H 6200 3725 50  0001 C CNN
-F 3 "" H 6200 3725 50  0001 C CNN
-	1    6200 3725
+P 6200 3825
+F 0 "#PWR0102" H 6200 3575 50  0001 C CNN
+F 1 "GND" H 6205 3652 50  0000 C CNN
+F 2 "" H 6200 3825 50  0001 C CNN
+F 3 "" H 6200 3825 50  0001 C CNN
+	1    6200 3825
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4850 4900
@@ -200,74 +200,47 @@ Wire Wire Line
 $Comp
 L Device:R_Small R18
 U 1 1 5D90E295
-P 5875 3525
-F 0 "R18" V 5679 3525 50  0000 C CNN
-F 1 "50" V 5770 3525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5875 3525 50  0001 C CNN
-F 3 "~" H 5875 3525 50  0001 C CNN
-	1    5875 3525
-	0    1    1    0   
+P 5950 3650
+F 0 "R18" V 6025 3650 50  0000 C CNN
+F 1 "16k" V 5875 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5950 3650 50  0001 C CNN
+F 3 "~" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R19
 U 1 1 5D90EC5A
-P 6600 3625
-F 0 "R19" H 6659 3671 50  0000 L CNN
-F 1 "50" H 6659 3580 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6600 3625 50  0001 C CNN
-F 3 "~" H 6600 3625 50  0001 C CNN
-	1    6600 3625
-	1    0    0    -1  
+P 6200 3525
+F 0 "R19" V 6350 3450 50  0000 L CNN
+F 1 "100m" V 6275 3425 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6200 3525 50  0001 C CNN
+F 3 "~" H 6200 3525 50  0001 C CNN
+	1    6200 3525
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C29
 U 1 1 5D90F928
-P 6075 3625
-F 0 "C29" H 6167 3671 50  0000 L CNN
-F 1 "330p" H 6167 3580 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6075 3625 50  0001 C CNN
-F 3 "~" H 6075 3625 50  0001 C CNN
-	1    6075 3625
+P 6400 3625
+F 0 "C29" H 6492 3671 50  0000 L CNN
+F 1 "1n" H 6492 3580 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 3625 50  0001 C CNN
+F 3 "~" H 6400 3625 50  0001 C CNN
+	1    6400 3625
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C28
 U 1 1 5D9103E4
-P 6400 3525
-F 0 "C28" V 6171 3525 50  0000 C CNN
-F 1 "330u" V 6262 3525 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 3525 50  0001 C CNN
-F 3 "~" H 6400 3525 50  0001 C CNN
-	1    6400 3525
+P 5750 3525
+F 0 "C28" V 5521 3525 50  0000 C CNN
+F 1 "100n" V 5612 3525 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5750 3525 50  0001 C CNN
+F 3 "~" H 5750 3525 50  0001 C CNN
+	1    5750 3525
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5350 3525 5775 3525
-Wire Wire Line
-	5975 3525 6075 3525
-Wire Wire Line
-	6075 3525 6300 3525
-Connection ~ 6075 3525
-Wire Wire Line
-	6500 3525 6600 3525
-Wire Wire Line
-	6075 3725 6200 3725
-Connection ~ 6200 3725
-Wire Wire Line
-	6200 3725 6600 3725
-Wire Wire Line
-	6600 3525 6600 3400
-Wire Wire Line
-	6600 3400 6900 3400
-Connection ~ 6600 3525
-Wire Notes Line
-	5575 3075 5575 4225
-Wire Notes Line
-	5575 4225 7300 4225
-Wire Notes Line
-	7300 4225 7300 3075
-Wire Notes Line
-	7300 3075 5575 3075
 $Comp
 L Device:R_Small R20
 U 1 1 5D955DB5
@@ -445,4 +418,143 @@ Text Notes 3200 2775 0    50   ~ 10
 AD9851 Decoupling
 Connection ~ 3550 2875
 Connection ~ 3550 3075
+$Comp
+L RF_Amplifier:BGA2851 U10
+U 1 1 5D98BDCA
+P 7475 3525
+F 0 "U10" H 7500 3650 50  0000 L CNN
+F 1 "BGA2851" H 7475 3375 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 7425 2875 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/BGA2851.pdf" H 7475 3525 50  0001 C CNN
+	1    7475 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 5D98ED21
+P 7375 3175
+F 0 "#PWR0120" H 7375 3025 50  0001 C CNN
+F 1 "+5V" H 7390 3348 50  0000 C CNN
+F 2 "" H 7375 3175 50  0001 C CNN
+F 3 "" H 7375 3175 50  0001 C CNN
+	1    7375 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5D98FE3B
+P 7375 3875
+F 0 "#PWR0121" H 7375 3625 50  0001 C CNN
+F 1 "GND" H 7380 3702 50  0000 C CNN
+F 2 "" H 7375 3875 50  0001 C CNN
+F 3 "" H 7375 3875 50  0001 C CNN
+	1    7375 3875
+	1    0    0    -1  
+$EndComp
+Text Notes 6950 2675 0    50   ~ 10
+MMIC Amplifier\nmatched internally\nin/out to 50ohm
+Wire Wire Line
+	5350 3525 5650 3525
+Wire Wire Line
+	5850 3525 5950 3525
+Wire Wire Line
+	5950 3550 5950 3525
+Connection ~ 5950 3525
+Wire Wire Line
+	5950 3525 6100 3525
+Wire Wire Line
+	6300 3525 6400 3525
+Wire Wire Line
+	5950 3750 6200 3750
+Wire Wire Line
+	6400 3750 6400 3725
+Wire Wire Line
+	6200 3750 6200 3825
+Connection ~ 6200 3750
+Wire Wire Line
+	6200 3750 6400 3750
+Wire Notes Line
+	5625 3125 5625 4050
+Wire Notes Line
+	5625 4050 6725 4050
+Wire Notes Line
+	6725 4050 6725 3125
+Wire Notes Line
+	6725 3125 5625 3125
+Wire Wire Line
+	7375 3825 7375 3875
+Wire Wire Line
+	7375 3225 7375 3175
+$Comp
+L Device:C_Small C37
+U 1 1 5D9C2425
+P 7950 3525
+F 0 "C37" V 7721 3525 50  0000 C CNN
+F 1 "470p" V 7812 3525 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7950 3525 50  0001 C CNN
+F 3 "~" H 7950 3525 50  0001 C CNN
+	1    7950 3525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C36
+U 1 1 5D9C3B15
+P 7025 3525
+F 0 "C36" V 6796 3525 50  0000 C CNN
+F 1 "470p" V 6887 3525 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7025 3525 50  0001 C CNN
+F 3 "~" H 7025 3525 50  0001 C CNN
+	1    7025 3525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5D9C4738
+P 7725 2875
+F 0 "C13" H 7817 2921 50  0000 L CNN
+F 1 "470p" H 7817 2830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7725 2875 50  0001 C CNN
+F 3 "~" H 7725 2875 50  0001 C CNN
+	1    7725 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 3525 7175 3525
+Wire Wire Line
+	7775 3525 7850 3525
+Wire Wire Line
+	8050 3525 8150 3525
+Wire Notes Line
+	6925 4125 8075 4125
+Wire Notes Line
+	8075 4125 8075 2375
+Wire Notes Line
+	8075 2375 6925 2375
+Wire Notes Line
+	6925 2375 6925 4125
+Wire Wire Line
+	6400 3525 6925 3525
+Connection ~ 6400 3525
+$Comp
+L power:GND #PWR0122
+U 1 1 5D9DDA37
+P 7725 2975
+F 0 "#PWR0122" H 7725 2725 50  0001 C CNN
+F 1 "GND" H 7730 2802 50  0000 C CNN
+F 2 "" H 7725 2975 50  0001 C CNN
+F 3 "" H 7725 2975 50  0001 C CNN
+	1    7725 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5D9DE892
+P 7725 2775
+F 0 "#PWR0123" H 7725 2625 50  0001 C CNN
+F 1 "+5V" H 7740 2948 50  0000 C CNN
+F 2 "" H 7725 2775 50  0001 C CNN
+F 3 "" H 7725 2775 50  0001 C CNN
+	1    7725 2775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
